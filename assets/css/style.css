@@ -17,7 +17,7 @@
   --gray-color: #c7c4c4;
   --primary-font: "Montserrat", sans-serif;
   --secondary-font: "Poppins", sans-serif;
-  --line-height: 1.5;
+  --line-height: 1.6;
   --body-font-size: 16px;
   --transition: all 0.5s ease-in-out;
   --fs-display-1: clamp(32px, 4vw, 60px);
@@ -785,6 +785,13 @@ ol {
 /* patients css end */
 
 /* About us page css start*/
+.about h3,
+.h3{
+  margin-bottom: 20px;
+}
+.about-card .card-body{
+  padding: 40px;
+}
 .about-card .about-content{
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
@@ -1012,7 +1019,7 @@ ol {
   color: var(--white-color);
 }
 .department-card .center-read:hover {
-  color: var(--secondary-color);
+  color: rgba(255, 255, 255, 0.7);
 }
 .department-card::before {
   content: "";
