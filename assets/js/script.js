@@ -229,4 +229,18 @@ $('#removeBtn').click(function(){
   $('#addBtn').show(); 
 });
 
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 });
