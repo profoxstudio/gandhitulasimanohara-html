@@ -182,7 +182,7 @@
             <figure class="doctor-profile text-center">
               <img src="./assets/image/doctor-boy.jpg" alt="profile" />
             </figure>
-            <div class="row text-center" style="margin-bottom: 20px;">
+            <div class="row text-center" style="margin-bottom: 20px">
               <div class="col-md-6">
                 <div class="icon">
                   <a href="tel:">
@@ -201,13 +201,16 @@
               </div>
             </div>
             <div class="consultation-title">
-              <h5 class="h6" style="margin-bottom: 20px;">Book an appointment for Consultation</h5>
+              <h5 class="h6" style="margin-bottom: 20px">
+                Book an appointment for Consultation
+              </h5>
             </div>
             <div class="date-select">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <div class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
+                      <ul>
                       <li class="nav-item" role="presentation">
                         <button
                           class="nav-link active"
@@ -219,14 +222,16 @@
                           aria-controls="pills-home"
                           aria-selected="true"
                         >
-                          <h6 style="font-size: 16px; font-weight: 500">
+                          <span style="font-size: 16px; font-weight: 500">
                             Today
-                          </h6>
-                          <p style="font-size: 12px">no Slots available</p>
+                          </span>
+                          <span style="font-size: 12px">no Slots available</span>
                         </button>
                       </li>
+                    </ul>
                     </div>
                     <div class="swiper-slide">
+                      <ul>
                       <li class="nav-item" role="presentation">
                         <button
                           class="nav-link"
@@ -238,14 +243,16 @@
                           aria-controls="pills-profile"
                           aria-selected="false"
                         >
-                          <h6 style="font-size: 16px; font-weight: 500">
+                          <span style="font-size: 16px; font-weight: 500">
                             Tomorrow
-                          </h6>
-                          <p style="font-size: 12px">6 Slots available</p>
+                          </span>
+                          <span style="font-size: 12px">6 Slots available</span>
                         </button>
                       </li>
+                    </ul>
                     </div>
                     <div class="swiper-slide">
+                      <ul>
                       <li class="nav-item" role="presentation">
                         <button
                           class="nav-link"
@@ -257,18 +264,20 @@
                           aria-controls="pills-contact"
                           aria-selected="false"
                         >
-                          <h6 style="font-size: 16px; font-weight: 500">
+                          <span style="font-size: 16px; font-weight: 500">
                             24-Jan
-                          </h6>
-                          <p style="font-size: 12px">6 Slots available</p>
+                          </span>
+                          <span style="font-size: 12px">6 Slots available</span>
                         </button>
                       </li>
+                    </ul>
                     </div>
                     <div class="swiper-slide">
+                      <ul>
                       <li class="nav-item" role="presentation">
                         <button
                           class="nav-link"
-                          id="pills-contact-tab"
+                          id="pills-contact-tab1"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-contact"
                           type="button"
@@ -279,12 +288,14 @@
                           Sun 26-Jan
                         </button>
                       </li>
+                    </ul>
                     </div>
                     <div class="swiper-slide">
+                      <ul>
                       <li class="nav-item" role="presentation">
                         <button
                           class="nav-link"
-                          id="pills-contact-tab"
+                          id="pills-contact-tab2"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-contact"
                           type="button"
@@ -295,12 +306,14 @@
                           Contact
                         </button>
                       </li>
+                    </ul>
                     </div>
                     <div class="swiper-slide">
+                      <ul>
                       <li class="nav-item" role="presentation">
                         <button
                           class="nav-link"
-                          id="pills-contact-tab"
+                          id="pills-contact-tab3"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-contact"
                           type="button"
@@ -311,12 +324,13 @@
                           Contact
                         </button>
                       </li>
+                    </ul>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-              </ul>
+              </div>
               <div class="tab-content" id="pills-tabContent">
                 <div
                   class="tab-pane fade show active"
@@ -328,13 +342,15 @@
                   <div class="crossCalendar text-center">
                     <i class="fa-regular fa-calendar-xmark"></i>
                   </div>
-                  <p class="text-center" style="margin: 10px 0 20px 0;">No slots available for today</p>
+                  <p class="text-center" style="margin: 10px 0 20px 0">
+                    No slots available for today
+                  </p>
                   <div class="check">
-                    <p>
-                      Kindly check for other date for availability
-                    </p>
+                    <p>Kindly check for other date for availability</p>
                   </div>
-                  <div class="call d-flex align-items-center justify-content-center gap-3">
+                  <div
+                    class="call d-flex align-items-center justify-content-center gap-3"
+                  >
                     <i class="fa-solid fa-phone"></i>
                     <a href="tel:">Call Now</a>
                   </div>
@@ -348,78 +364,87 @@
                 >
                   <div class="row align-items-end pb-2">
                     <div class="col-md-3">
-                        <i class="fa-solid fa-cloud-sun"></i>
-                        <p class="timesOfDay">Morning</p>
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
                     </div>
                     <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="row align-items-end pb-2">
                     <div class="col-md-3">
-                        <i class="fa-solid fa-sun"></i>
-                        <p class="timesOfDay">Afternoon</p>
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
                     </div>
                     <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="row align-items-end pb-2">
                     <div class="col-md-3">
-                        <i class="fa-solid fa-moon"></i>
-                        <p class="timesOfDay">Evening</p>
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
                     </div>
-                    <div class="col-md-9">
-                        
-                    </div>
+                    <div class="col-md-9"></div>
                   </div>
-
                 </div>
                 <div
                   class="tab-pane fade"
@@ -428,78 +453,88 @@
                   aria-labelledby="pills-contact-tab"
                   tabindex="0"
                 >
-                <div class="row align-items-end pb-2">
+                  <div class="row align-items-end pb-2">
                     <div class="col-md-3">
-                        <i class="fa-solid fa-cloud-sun"></i>
-                        <p class="timesOfDay">Morning</p>
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
                     </div>
                     <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="row align-items-end pb-2">
                     <div class="col-md-3">
-                        <i class="fa-solid fa-sun"></i>
-                        <p class="timesOfDay">Afternoon</p>
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
                     </div>
                     <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card time-card">
-                                    <div class="card-body p-1">
-                                        <h5 class="h6" style="font-size: 14px;"><a href="#">09:00 AM</a></h5>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="row align-items-end pb-2">
                     <div class="col-md-3">
-                        <i class="fa-solid fa-moon"></i>
-                        <p class="timesOfDay">Evening</p>
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
                     </div>
-                    <div class="col-md-9">
-                        
-                    </div>
+                    <div class="col-md-9"></div>
                   </div>
                 </div>
               </div>
@@ -611,7 +646,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseOne"
                   >
-                    <h5 class="h6">Researches & Publications</h5>
+                    <span class="h6">Researches & Publications</span>
                   </button>
                 </h2>
                 <div
@@ -639,7 +674,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
                   >
-                    <h5 class="h6">Membership</h5>
+                    <span class="h6">Membership</span>
                   </button>
                 </h2>
                 <div
@@ -664,53 +699,53 @@
     </section>
 
     <section class="contact">
-        <div class="row g-0">
-          <div class="col-md-3">
-            <div class="card contact-card text-center">
-              <div class="card-icon">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-              </div>
-              <div class="card-body">
-                <h4>Contact Hospital</h4>
-                <a href="tel:"><span> +977-01-421 7766</span></a>
-              </div>
+      <div class="row g-0">
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card contact-card text-center">
-              <div class="card-icon">
-                <i class="fa-solid fa-phone-volume"></i>
-              </div>
-              <div class="card-body">
-                <h4>Emmergency Call</h4>
-                <a href="tel:"><span> +977-01-421 7766</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card contact-card text-center">
-              <div class="card-icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="card-body">
-                <h4>Map & Direction</h4>
-                <a href="Map:"><span> Kageshwori Manohara 9, Kadaghari</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card contact-card text-center">
-              <div class="card-icon">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-              </div>
-              <div class="card-body">
-                <h4>Heli Rescue</h4>
-                <a href="tel:"><span>Heli:</span>9858777111</a>
-              </div>
+            <div class="card-body">
+              <h4>Contact Hospital</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
             </div>
           </div>
         </div>
-      </section>
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="card-body">
+              <h4>Emmergency Call</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="card-body">
+              <h4>Map & Direction</h4>
+              <a href="Map:"><span> Kageshwori Manohara 9, Kadaghari</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="card-body">
+              <h4>Heli Rescue</h4>
+              <a href="tel:"><span>Heli:</span>9858777111</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="site-footer block">
       <div class="container">
