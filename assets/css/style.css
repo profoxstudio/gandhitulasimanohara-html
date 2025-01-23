@@ -1061,7 +1061,13 @@ ol {
   padding: 20px 0;
   border-bottom: 1px solid var(--black-color);
 }
-.doctor-detail p{
+.position{
+  margin: 0;
+}
+.timesOfDay{
+  margin: 0;
+}
+.nav-link p{
   margin: 0;
 }
 .detail li{
