@@ -126,7 +126,7 @@
                   class="modal fade"
                   id="exampleModal"
                   tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
+                  aria-labelledby="exampleModal"
                   aria-hidden="true"
                 >
                   <div class="modal-dialog">
@@ -213,7 +213,7 @@
                       <ul>
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link active"
+                          class="nav-link active d-flex flex-column align-items-center"
                           id="pills-home-tab"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-home"
@@ -225,7 +225,7 @@
                           <span style="font-size: 16px; font-weight: 500">
                             Today
                           </span>
-                          <span style="font-size: 12px">no Slots available</span>
+                          <span style="font-size: 12px; color: black;">no Slots available</span>
                         </button>
                       </li>
                     </ul>
@@ -234,7 +234,7 @@
                       <ul>
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          class="nav-link d-flex flex-column align-items-center"
                           id="pills-profile-tab"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-profile"
@@ -246,7 +246,7 @@
                           <span style="font-size: 16px; font-weight: 500">
                             Tomorrow
                           </span>
-                          <span style="font-size: 12px">6 Slots available</span>
+                          <span style="font-size: 12px; color: green;">6 Slots available</span>
                         </button>
                       </li>
                     </ul>
@@ -255,7 +255,7 @@
                       <ul>
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          class="nav-link d-flex flex-column align-items-center"
                           id="pills-contact-tab"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-contact"
@@ -267,7 +267,7 @@
                           <span style="font-size: 16px; font-weight: 500">
                             24-Jan
                           </span>
-                          <span style="font-size: 12px">6 Slots available</span>
+                          <span style="font-size: 12px; color: green;">6 Slots available</span>
                         </button>
                       </li>
                     </ul>
@@ -276,16 +276,19 @@
                       <ul>
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          class="nav-link d-flex flex-column align-items-center"
                           id="pills-contact-tab1"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-contact"
                           type="button"
                           role="tab"
-                          aria-controls="pills-contact"
+                          aria-controls="pills-contact1"
                           aria-selected="false"
                         >
-                          Sun 26-Jan
+                        <span style="font-size: 16px; font-weight: 500">
+                          25-Jan
+                        </span>
+                        <span style="font-size: 12px;  color: green;">6 Slots available</span>
                         </button>
                       </li>
                     </ul>
@@ -294,16 +297,19 @@
                       <ul>
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          class="nav-link d-flex flex-column align-items-center"
                           id="pills-contact-tab2"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-contact"
                           type="button"
                           role="tab"
-                          aria-controls="pills-contact"
+                          aria-controls="pills-contact2"
                           aria-selected="false"
                         >
-                          Contact
+                        <span style="font-size: 16px; font-weight: 500">
+                          26-Jan
+                        </span>
+                        <span style="font-size: 12px;  color: green;">6 Slots available</span>
                         </button>
                       </li>
                     </ul>
@@ -312,16 +318,19 @@
                       <ul>
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          class="nav-link d-flex flex-column align-items-center"
                           id="pills-contact-tab3"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-contact"
                           type="button"
                           role="tab"
-                          aria-controls="pills-contact"
+                          aria-controls="pills-contact3"
                           aria-selected="false"
                         >
-                          Contact
+                        <span style="font-size: 16px; font-weight: 500">
+                          27-Jan
+                        </span>
+                        <span style="font-size: 12px; color: green;">6 Slots available</span>
                         </button>
                       </li>
                     </ul>
@@ -355,6 +364,7 @@
                     <a href="tel:">Call Now</a>
                   </div>
                 </div>
+
                 <div
                   class="tab-pane fade"
                   id="pills-profile"
@@ -446,6 +456,7 @@
                     <div class="col-md-9"></div>
                   </div>
                 </div>
+
                 <div
                   class="tab-pane fade"
                   id="pills-contact"
@@ -537,6 +548,283 @@
                     <div class="col-md-9"></div>
                   </div>
                 </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact1"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab1"
+                  tabindex="0"
+                >
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact2"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab2"
+                  tabindex="0"
+                >
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact3"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab3"
+                  tabindex="0"
+                >
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body p-1">
+                              <h5 class="h6" style="font-size: 14px">
+                                <a href="#">09:00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end pb-2">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
