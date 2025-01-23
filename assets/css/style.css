@@ -113,7 +113,7 @@ ol {
 }
 .btn-sm {
   border-radius: 7px;
-  padding: 6px 10px;
+  padding: 6px 15px;
 }
 .btn-circle {
   padding: 0;
@@ -250,6 +250,10 @@ ol {
   color: var(--secondary-color);
 }
 .breadcrumb .active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.breadcrumb .active:hover{
   color: var(--primary-color);
 }
 /* header css start */
@@ -1017,9 +1021,11 @@ ol {
 }
 .department-card:hover .center-read {
   color: var(--white-color);
+  background-color: transparent;
+  border: 1px solid var(--white-color);
 }
 .department-card .center-read:hover {
-  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--secondary-color);
 }
 .department-card::before {
   content: "";
@@ -1077,6 +1083,9 @@ ol {
 }
 .accordion-collapse.show{
   border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.accordion-item:first-child .accordion-collapse.show{
+  border-bottom: 0;
 }
 .accordion-button:focus {
   z-index: 3;
