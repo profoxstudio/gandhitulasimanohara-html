@@ -192,12 +192,140 @@
                 <p>Call for appointment</p>
               </div>
               <div class="col-md-6">
-                <div class="icon">
-                  <a href="tel:">
+                <!-- Button trigger modal -->
+                <div class="open-popup d-flex flex-column">
+                  <button
+                    type="button"
+                    class="icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
                     <i class="fa-solid fa-comments"></i>
-                  </a>
+                  </button>
+                  <p>Send An Enquiry</p>
                 </div>
-                <p>Send An Enquiry</p>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                          Enquiry
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form
+                          action="#"
+                          id="enquiry-form"
+                          class="enquiry-formPopup"
+                        >
+                          <div
+                            class="form-group d-flex justify-content-between align-items-center"
+                          >
+                            <label for="facilities">Select :</label>
+                            <select name="facilities" id="facilities">
+                              <option value="Select an Enquiry Type">
+                                Select an Enquiry Type
+                              </option>
+                              <option value="Facilities Available">
+                                Facilities Available
+                              </option>
+                              <option value="About Doctor">About Doctor</option>
+                              <option value="Appoint Enquiry">
+                                Appoint Enquiry
+                              </option>
+                              <option value="Feedback">Feedback</option>
+                            </select>
+                          </div>
+                          <div
+                            class="form-group d-flex justify-content-between align-items-center"
+                          >
+                            <label for="name">Name :</label>
+                            <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                          <div
+                            class="form-group d-flex justify-content-between align-items-center"
+                          >
+                            <label for="mobile">Mobile :</label>
+                            <input
+                              type="text"
+                              name="mobile"
+                              id="mobile"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                          <div
+                            class="form-group d-flex justify-content-between align-items-center"
+                          >
+                            <label for="email">Email :</label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                          <div class="form-group d-flex">
+                            <input
+                              type="checkbox"
+                              name="registered"
+                              id="registered"
+                            />
+                            <label for="registered"
+                              >Registered With Gandhi?</label
+                            >
+                          </div>
+                          <div
+                            class="form-group d-flex justify-content-between align-items-center"
+                          >
+                            <label for="detail">Detail :</label>
+                            <textarea
+                              name="detail"
+                              id="detail"
+                              rows="5"
+                              required
+                            ></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="consultation-title">
@@ -211,129 +339,141 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <ul>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link active d-flex flex-column align-items-center"
-                          id="pills-home-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-home"
-                          type="button"
-                          role="tab"
-                          aria-controls="pills-home"
-                          aria-selected="true"
-                        >
-                          <span style="font-size: 16px; font-weight: 500">
-                            Today
-                          </span>
-                          <span style="font-size: 12px; color: black;">no Slots available</span>
-                        </button>
-                      </li>
-                    </ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active d-flex flex-column align-items-center"
+                            id="pills-home-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              Today
+                            </span>
+                            <span style="font-size: 12px; color: black"
+                              >no Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
                     </div>
                     <div class="swiper-slide">
                       <ul>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link d-flex flex-column align-items-center"
-                          id="pills-profile-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-profile"
-                          type="button"
-                          role="tab"
-                          aria-controls="pills-profile"
-                          aria-selected="false"
-                        >
-                          <span style="font-size: 16px; font-weight: 500">
-                            Tomorrow
-                          </span>
-                          <span style="font-size: 12px; color: green;">6 Slots available</span>
-                        </button>
-                      </li>
-                    </ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-profile-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-profile"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              Tomorrow
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
                     </div>
                     <div class="swiper-slide">
                       <ul>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link d-flex flex-column align-items-center"
-                          id="pills-contact-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-contact"
-                          type="button"
-                          role="tab"
-                          aria-controls="pills-contact"
-                          aria-selected="false"
-                        >
-                          <span style="font-size: 16px; font-weight: 500">
-                            24-Jan
-                          </span>
-                          <span style="font-size: 12px; color: green;">6 Slots available</span>
-                        </button>
-                      </li>
-                    </ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              24-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
                     </div>
                     <div class="swiper-slide">
                       <ul>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link d-flex flex-column align-items-center"
-                          id="pills-contact-tab1"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-contact"
-                          type="button"
-                          role="tab"
-                          aria-controls="pills-contact1"
-                          aria-selected="false"
-                        >
-                        <span style="font-size: 16px; font-weight: 500">
-                          25-Jan
-                        </span>
-                        <span style="font-size: 12px;  color: green;">6 Slots available</span>
-                        </button>
-                      </li>
-                    </ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab1"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact1"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              25-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
                     </div>
                     <div class="swiper-slide">
                       <ul>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link d-flex flex-column align-items-center"
-                          id="pills-contact-tab2"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-contact"
-                          type="button"
-                          role="tab"
-                          aria-controls="pills-contact2"
-                          aria-selected="false"
-                        >
-                        <span style="font-size: 16px; font-weight: 500">
-                          26-Jan
-                        </span>
-                        <span style="font-size: 12px;  color: green;">6 Slots available</span>
-                        </button>
-                      </li>
-                    </ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab2"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact2"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              26-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
                     </div>
                     <div class="swiper-slide">
                       <ul>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link d-flex flex-column align-items-center"
-                          id="pills-contact-tab3"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pills-contact"
-                          type="button"
-                          role="tab"
-                          aria-controls="pills-contact3"
-                          aria-selected="false"
-                        >
-                        <span style="font-size: 16px; font-weight: 500">
-                          27-Jan
-                        </span>
-                        <span style="font-size: 12px; color: green;">6 Slots available</span>
-                        </button>
-                      </li>
-                    </ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab3"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact3"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              27-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -383,7 +523,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -392,7 +532,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -401,7 +541,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -410,7 +550,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -430,7 +570,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -439,7 +579,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -475,7 +615,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -484,7 +624,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -493,7 +633,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -502,7 +642,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -522,7 +662,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -531,7 +671,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -567,7 +707,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -576,7 +716,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -585,7 +725,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -594,7 +734,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -614,7 +754,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -623,7 +763,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -659,7 +799,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -668,7 +808,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -677,7 +817,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -686,7 +826,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -706,7 +846,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -715,7 +855,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -751,7 +891,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -760,7 +900,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -769,7 +909,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -778,7 +918,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -798,7 +938,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -807,7 +947,7 @@
                           <div class="card time-card">
                             <div class="card-body p-1">
                               <h5 class="h6" style="font-size: 14px">
-                                <a href="#">09:00 AM</a>
+                                <a href="./appointment-form.html">9.00 AM</a>
                               </h5>
                             </div>
                           </div>
@@ -824,7 +964,6 @@
                     <div class="col-md-9"></div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -1024,7 +1163,9 @@
         <div class="col-md-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
-              <i class="fa-solid fa-mobile-screen-button"></i>
+              <a href="./heliAmbulance.html"
+                ><i class="fa-solid fa-helicopter"></i
+              ></a>
             </div>
             <div class="card-body">
               <h4>Heli Rescue</h4>
@@ -1120,10 +1261,12 @@
         </div>
       </div>
     </footer>
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/vendors/slicknav/jquery.slicknav.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

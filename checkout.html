@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Health Packages</title>
+    <title>Doctor Details</title>
     <link
       rel="stylesheet"
       href="./assets/vendors/swiper/swiper-bundle.min.css"
@@ -40,7 +40,7 @@
                   class="top-header-icon d-flex align-items-center justify-content-center"
                   ><i class="fa-solid fa-phone"></i
                 ></span>
-                <a href="tel:"><span> +977-01-421 7766</span></a>
+                <a href="tel:"> +977-01-421 7766</a>
               </li>
               <li class="d-flex align-items-center gap-2 flex-shrink-0">
                 <span
@@ -120,10 +120,6 @@
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <div class="cart-icon" id="cart-icon">
-                  <i class="fa-solid fa-shopping-cart"></i>
-                  <span class="cart-count"></span>
-                </div>
 
                 <!-- Modal -->
                 <div
@@ -165,157 +161,206 @@
     </header>
     <!-- header html end -->
     <!-- start page header html -->
-    <section class="page-header block">
+    <div class="appointment-form block">
       <div class="container">
-        <h1 class="h3">Health Packages</h1>
-        <div class="breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="mx-2"><i class="fa-solid fa-angle-right"></i></span>
-          <a href="#" class="active">Health Packages</a>
-        </div>
-      </div>
-    </section>
-    <!-- end page header html -->
+        <form action="#">
+          <h2 class="heading-style text-center" style="margin-bottom: 80px">
+            Fill your detail
+          </h2>
+          <div class="row" style="padding-bottom: 30px">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-user"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <section class="health-package block">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-img">
-                    <img
-                      src="./assets/image/gandhi-hospital-patients-3.jpg"
-                      alt="package image"
+          <div class="row" style="padding-bottom: 30px">
+            <div class="col-md-4">
+                <div class="form-group">
+                  <label for="age">Age</label>
+                  <div class="icon-input d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-birthday-cake"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="age"
+                      placeholder="Age"
                     />
                   </div>
                 </div>
-                <div class="col-md-8">
-                  <div
-                    class="card-body d-flex flex-column flex-grow-1 align-items-start"
-                  >
-                    <h3 class="h6">
-                      <a href="./health-packageDetail.html"
-                        >Standard cadiac checkup package</a
-                      >
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <div class="price-box d-flex align-items-center gap-3 mb-3">
-                      <span class="old-price">NPR149</span>
-                      <span class="price">NPR99</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
-                    </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="date">Date</label>
+                  <div class="icon-input d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      placeholder="Date"
+                    />
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="time">Time</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-clock"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="time"
+                    placeholder="hh:mm AM/PM"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding-bottom: 30px">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="mobNum">Mobile Number</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="mobNum"
+                    placeholder="Mobile Number"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="altNumber">Alternative Mobile Number</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-phone"></i>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="altNumber"
+                    placeholder="Alternative Mobile Number"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-at"></i>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 30px">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="address">Address</label>
+                  <div class="icon-input d-flex align-items-start gap-2">
+                    <i
+                      class="fa-solid fa-address-card"
+                      style="padding-top: 10px"
+                    ></i>
+                    <textarea
+                      name="address"
+                      id="address"
+                      placeholder="Address"
+                      class="form-control"
+                    ></textarea>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-img">
-                    <img
-                      src="./assets/image/gandhi-hospital-patients-3.jpg"
-                      alt="package image"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    class="card-body d-flex flex-column flex-grow-1 align-items-start"
-                  >
-                    <h3 class="h6">
-                      <a href="#">Standard cadiac checkup package</a>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <div class="price-box d-flex align-items-center gap-3 mb-3">
-                      <span class="old-price">NPR149</span>
-                      <span class="price">NPR99</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn btn-primary">Submit & Continue</div>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-img">
-                    <img
-                      src="./assets/image/gandhi-hospital-patients-3.jpg"
-                      alt="package image"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    class="card-body d-flex flex-column flex-grow-1 align-items-start"
-                  >
-                    <h3 class="h6">
-                      <a href="#">Standard cadiac checkup package</a>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <div class="price-box d-flex align-items-center gap-3 mb-3">
-                      <span class="old-price">NPR149</span>
-                      <span class="price">NPR99</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="contact">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="card-body">
+              <h4>Contact Hospital</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-img">
-                    <img
-                      src="./assets/image/gandhi-hospital-patients-3.jpg"
-                      alt="package image"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    class="card-body d-flex flex-column flex-grow-1 align-items-start"
-                  >
-                    <h3 class="h6">
-                      <a href="#">Standard cadiac checkup package</a>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <div class="price-box d-flex align-items-center gap-3 mb-3">
-                      <span class="old-price">NPR149</span>
-                      <span class="price">NPR99</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="card-body">
+              <h4>Emmergency Call</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="card-body">
+              <h4>Map & Direction</h4>
+              <a href="Map:"><span> Kageshwori Manohara 9, Kadaghari</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <a href="./heliAmbulance.html"
+                ><i class="fa-solid fa-helicopter"></i
+              ></a>
+            </div>
+            <div class="card-body">
+              <h4>Heli Rescue</h4>
+              <a href="tel:"><span>Heli:</span>9858777111</a>
             </div>
           </div>
         </div>
@@ -407,10 +452,12 @@
         </div>
       </div>
     </footer>
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/vendors/slicknav/jquery.slicknav.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

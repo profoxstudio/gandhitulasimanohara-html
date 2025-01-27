@@ -253,7 +253,7 @@ ol {
   color: var(--primary-color);
   font-weight: 600;
 }
-.breadcrumb .active:hover{
+.breadcrumb .active:hover {
   color: var(--primary-color);
 }
 /* header css start */
@@ -306,7 +306,9 @@ ol {
   font-size: 16px;
   border: none;
 }
-
+.form-control:focus{
+  border: none;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -358,6 +360,34 @@ ol {
   width: 100%;
   border: none;
   outline: none;
+}
+.cart-icon {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+.cart-icon i {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.cart-icon .cart-count {
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* header css end */
 
@@ -790,29 +820,34 @@ ol {
 
 /* About us page css start*/
 .about h3,
-.h3{
+.h3 {
   margin-bottom: 20px;
 }
-.about-card .card-body{
+.about-card .card-body {
   padding: 40px;
 }
-.about-card .about-content{
+.about-card .about-content {
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
-.about-card .about-infra{
+.about-card .about-infra {
   padding-top: 30px;
 }
-.contact-card{
+.contact-card {
   border-radius: 0;
 }
-.contact-card .card-icon i{
+.contact-card .card-icon i {
   font-size: 35px;
   background: var(--bg-color);
-  padding: 15px 20px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
-.contact-card .card-icon{
+.contact-card .card-icon {
   padding-top: 30px;
 }
 /* About us page css end */
@@ -1053,45 +1088,44 @@ ol {
 /* department css end */
 
 /*Doctor detail page css start */
-.bg{
+.bg {
   background-color: var(--white-color);
   padding: 10px;
 }
-.detail{
+.detail {
   padding: 20px 0;
   border-bottom: 1px solid var(--black-color);
 }
-.position{
+.position {
   margin: 0;
 }
-.timesOfDay{
+.timesOfDay {
   margin: 0;
 }
-.nav-link p{
+.nav-link p {
   margin: 0;
 }
-.detail li{
+.detail li {
   border-bottom: 1px solid var(--black-color);
   padding: 5px 0;
   list-style: disc;
 }
-.doctor-detail .h6{
+.doctor-detail .h6 {
   margin: 0;
 }
-.accordion-button{
+.accordion-button {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
-.accordion-item:first-child .accordion-button{
+.accordion-item:first-child .accordion-button {
   border-bottom: 0;
 }
 .accordion-button:not(.collapsed) {
   background-color: transparent;
-  transition: var(--transition);
 }
-.accordion-collapse.show{
+.accordion-collapse.show {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
-.accordion-item:first-child .accordion-collapse.show{
+.accordion-item:first-child .accordion-collapse.show {
   border-bottom: 0;
 }
 .accordion-button:focus {
@@ -1099,22 +1133,22 @@ ol {
   outline: 0;
   box-shadow: none;
 }
-.rectangle{
+.rectangle {
   background-color: var(--primary-color);
   height: 200px;
   margin-top: 10px;
 }
-.doctor-profile img{
+.doctor-profile img {
   max-width: 250px;
   border-radius: 50%;
   margin-top: -120px;
 }
-.icon{
+.icon {
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
-.icon i{
+.icon i {
   font-size: 30px;
   background-color: var(--primary-color);
   width: 60px;
@@ -1125,54 +1159,62 @@ ol {
   border-radius: 50%;
   color: var(--white-color);
 }
-.consultation-title h5{
+.consultation-title h5 {
   color: var(--white-color);
   background-color: var(--primary-color);
   padding: 10px;
   text-align: center;
-
 }
-.nav-link{
+.nav-link {
   color: var(--black-color);
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: var(--primary-color);
   background-color: transparent;
 }
-.crossCalendar i{
+.crossCalendar i {
   color: red;
   font-size: 60px;
 }
-.check{
+.check {
   color: var(--white-color);
   background-color: var(--primary-color);
   padding: 10px;
   text-align: center;
 }
-.check p{
+.check p {
   max-width: 300px;
   margin: 0 auto;
 }
-.check p a{
+.check p a {
   color: var(--white-color);
 }
-.check p a:hover{
+.check p a:hover {
   background-color: var(--primary-hover-color);
 }
-.call{
+.call {
   color: var(--primary-color);
   margin: 10px 0;
   border: 1px solid var(--primary-color);
   padding: 10px;
+  transition: var(--transition);
 }
-.doctor-detail .swiper-button-next{
+.call:hover{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.call:hover a{
+  color: var(--white-color);
+}
+.doctor-detail .swiper-button-next {
   opacity: 1;
   position: relative;
   top: 0;
   left: 90%;
   margin-top: -56px;
 }
-.doctor-detail .swiper-button-prev{
+.doctor-detail .swiper-button-prev {
   opacity: 1;
   position: relative;
   top: 0;
@@ -1180,8 +1222,42 @@ ol {
   margin-top: -56px;
   margin-left: -70px;
 }
-
-
+.enquiry-formPopup {
+  width: 100%;
+  max-width: 500px;
+}
+.open-popup .icon{
+  border: 0;
+  background-color: transparent;
+}
+.enquiry-formPopup input{
+  width: 100%;
+  max-width: 300px;
+  padding: 5px 10px;
+}
+.enquiry-formPopup select{
+  width: 100%;
+  max-width: 300px;
+  padding: 5px 10px;
+}
+.enquiry-formPopup textarea{
+  width: 100%;
+  max-width: 300px;
+  padding: 5px 10px;
+}
+.submit-btn {
+  max-width: 150px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.enquiry-formPopup .form-group {
+  margin-bottom: 20px;
+}
+#registered{
+  width: 15px;
+  margin: 0 170px;
+  margin-right: 10px;
+}
 /*Doctor detail page css end */
 
 /* opd appointment css start */
@@ -1231,16 +1307,16 @@ ol {
 }
 .doctor-card .card-img {
   position: relative;
-  border-radius: 7px 7px 0 0;;
+  border-radius: 7px 7px 0 0;
   overflow: hidden;
 }
-.doctor-card a{
+.doctor-card a {
   color: var(--black-color);
 }
-.doctor-card a:hover{
+.doctor-card a:hover {
   color: var(--primary-color);
 }
-.doctor-card .card-img img  {
+.doctor-card .card-img img {
   transition: var(--transition);
 }
 .doctor-card:hover .card-img img {
@@ -1260,14 +1336,14 @@ ol {
   transform: translateY(0);
 }
 .doctor-social-media a {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 35px;
-width: 35px;
-background-color: var(--primary-color);
-color: var(--white-color);
-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 50%;
 }
 .doctor-social-media a:hover {
   background-color: var(--primary-hover-color);
@@ -1287,7 +1363,6 @@ border-radius: 50%;
   border-right: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-
 .search-name {
   background-color: var(--white-color);
   padding: 15px 25px;
@@ -1306,15 +1381,35 @@ border-radius: 50%;
 
 /* opd appointment css end */
 
+/* package detail css start */
+.package-detail .custom-listStyle li {
+  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2306693A"><path d="M9 19c-.26 0-.51-.1-.71-.29l-6-6A.996.996 0 1 1 3.7 11.3l5.29 5.29L20.28 5.3a.996.996 0 1 1 1.41 1.41l-12 12c-.2.2-.45.29-.71.29Z"></path></svg>');
+}
+.package-detail .custom-listStyle li::marker {
+  font-size: 30px;
+}
+.package-detail ul {
+  padding-left: 25px;
+}
+.do-dont ul li {
+  list-style-type: disc;
+}
+.package-detail .price-box {
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 0;
+  border-right: 0;
+}
 /*appointment detail page css start */
-.img-bg{
+.img-bg {
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 20px;
   height: 300px;
   border-radius: 0 0 10px 10px;
 }
-.video-content .vid-img img{
+.video-content .vid-img img {
   max-height: 250px;
   width: 100%;
   object-fit: cover;
@@ -1322,17 +1417,63 @@ border-radius: 50%;
   background-color: var(--white-color);
   border-radius: 10px;
 }
-.vid-card{
+.vid-card {
   background-color: var(--white-color);
   margin: 0 10px;
   margin-top: -230px;
 }
-.vid-card .card-body{
+.vid-card .card-body {
   padding-top: 0;
 }
-.vid-card .card-body p{
+.vid-card .card-body p {
   margin: 0;
 }
+/* appointment detail page css end */
+
+/*heli ambulance css start */
+.heli-advantages {
+  margin-left: 30px;
+}
+.heli-advantages li {
+  list-style: disc;
+}
+
+/*Appointment form page css start */
+.appointment-form form{
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  padding: 30px;
+}
+.appointment-form label{
+  font-weight: 600;
+}
+.appointment-form select{
+  border: 0;
+  width: 100%;
+  padding: 6px 12px;
+}
+.appointment-form .icon-input input{
+  border: 0;
+}
+.icon-input{
+  border: 1px solid #dee2e6;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+.icon-input textarea{
+  width: 100%;
+  border: 0;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.icon-input i{
+  color: var(--primary-color);
+}
+.form-control:focus .icon-input{
+  border-color: var(--primary-color);
+}
+
 /* footer css start */
 .site-footer {
   background-color: var(--black-color);

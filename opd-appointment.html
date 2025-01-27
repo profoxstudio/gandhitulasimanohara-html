@@ -120,6 +120,10 @@
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+                <div class="cart-icon" id="cart-icon">
+                  <i class="fa-solid fa-shopping-cart"></i>
+                  <span class="cart-count"></span>
+                </div>
 
                 <!-- Modal -->
                 <div
@@ -202,6 +206,18 @@
                   aria-selected="false"
                 >
                   Doctor by Name
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-Organ-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-Organ"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-Organ"
+                  aria-selected="false"
+                >
+                  Doctor by Organ Search
                 </button>
               </div>
             </nav>
@@ -524,6 +540,21 @@
                   <input type="text" placeholder="Search by Doctor's name" />
                   <button type="submit" class="btn btn-primary">Search</button>
                 </form>
+              </div>
+              <div
+                class="tab-pane fade show active"
+                id="nav-Organ"
+                role="tabpanel"
+                aria-labelledby="nav-Organ-tab"
+                tabindex="0"
+              >
+                <div class="row">
+                  <div class="col-md-4">
+                    <figure>
+                      <img src="" alt="">
+                    </figure>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Health Packages</title>
+    <title>Package Detail</title>
     <link
       rel="stylesheet"
       href="./assets/vendors/swiper/swiper-bundle.min.css"
@@ -121,9 +121,9 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 <div class="cart-icon" id="cart-icon">
-                  <i class="fa-solid fa-shopping-cart"></i>
-                  <span class="cart-count"></span>
-                </div>
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-count"></span>
+                  </div>
 
                 <!-- Modal -->
                 <div
@@ -171,20 +171,27 @@
         <div class="breadcrumb">
           <a href="index.html">Home</a>
           <span class="mx-2"><i class="fa-solid fa-angle-right"></i></span>
-          <a href="#" class="active">Health Packages</a>
+          <a href="./health-package.html">Health Packages</a>
+          <span class="mx-2"><i class="fa-solid fa-angle-right"></i></span>
+          <p class="active">Package Detail</p>
+        </div>
+        <div class="all-package d-flex justify-content-end" style="margin-top: -50px;">
+            
+            <a href="./health-package.html" class="btn btn-primary">
+                <i class="fa-solid fa-eye"></i>
+                All Package
+            </a>
         </div>
       </div>
     </section>
     <!-- end page header html -->
 
-    <section class="health-package block">
+    <section class="package-detail block">
       <div class="container">
+          <div class="card packageDetail-card justify-content-between">
         <div class="row g-4">
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
                 <div class="col-md-4">
-                  <div class="card-img">
+                  <div class="card-img" style="padding: 30px;">
                     <img
                       src="./assets/image/gandhi-hospital-patients-3.jpg"
                       alt="package image"
@@ -195,124 +202,65 @@
                   <div
                     class="card-body d-flex flex-column flex-grow-1 align-items-start"
                   >
-                    <h3 class="h6">
-                      <a href="./health-packageDetail.html"
-                        >Standard cadiac checkup package</a
-                      >
+                    <h3 class="h5">
+                        Standard cadiac checkup package
                     </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
                     <div class="price-box d-flex align-items-center gap-3 mb-3">
                       <span class="old-price">NPR149</span>
                       <span class="price">NPR99</span>
                     </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
+                    <div class="testServices" >
+                        <h4>Tests/ Services</h4>
+                        <ul class="custom-listStyle" style="padding-bottom: 20px;">
+                            <li>
+                                CBC
+                            </li>
+                            <li>
+                                Lipid Profile
+                            </li>
+                            <li>
+                                Liver Function Test
+                            </li>
+                            <li>
+                                Potassium, Serum(K+)
+                            </li>
+                            <li>
+                                Sodium Blood Test (NA+)
+                            </li>
+                            <li>
+                                Glucose Fasting
+                            </li>
+                            <li>
+                                Creatine, Serum
+                            </li>
+                        </ul>
+                        <p>
+                            Basic Health Package helps you to avoid a wide number of diseases and diagnose early if you have any. It includes essential tests such as CBC, Lipid Profile, Liver Function Test (LFT), Potassium (K+), Sodium (NA+), Glucose Fasting, Creatinine, Urea, Thyroid-stimulating hormone (TSH), Uric Acid, and a Urine Routine Examination. Additionally, the package offers diagnostic imaging services like a Chest X-Ray, Electrocardiography (ECG), and an Ultrasound of the Abdomen and Pelvis (USG). A detailed physician consultation and a vision test (eye sight) are also part of this package, ensuring a holistic review of your health. This package is ideal for early detection and management of potential health issues.
+                        </p>
+                        <div class="do-dont" style="padding-bottom: 20px;">
+                            <h5>What should be done</h5>
+                            <ul>
+                                <li>
+                                    Follow any fasting requirements strictly to ensure accurate test results.
+                                </li>
+                                <li>
+                                    Stay hydrated by drinking plenty of water before urine tests and ultrasound examinations.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="do-dont" style="padding-bottom: 20px;">
+                            <h5>What Should be Avoided</h5>
+                            <ul>
+                                <li>
+                                    Avoid strenuous exercise or physical activities before tests like ECG and blood tests. 
+                                </li>
+                                <li>
+                                    Do not consume alcohol or caffeine 24 hours before the tests as it may affect the results.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-img">
-                    <img
-                      src="./assets/image/gandhi-hospital-patients-3.jpg"
-                      alt="package image"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    class="card-body d-flex flex-column flex-grow-1 align-items-start"
-                  >
-                    <h3 class="h6">
-                      <a href="#">Standard cadiac checkup package</a>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <div class="price-box d-flex align-items-center gap-3 mb-3">
-                      <span class="old-price">NPR149</span>
-                      <span class="price">NPR99</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-img">
-                    <img
-                      src="./assets/image/gandhi-hospital-patients-3.jpg"
-                      alt="package image"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    class="card-body d-flex flex-column flex-grow-1 align-items-start"
-                  >
-                    <h3 class="h6">
-                      <a href="#">Standard cadiac checkup package</a>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <div class="price-box d-flex align-items-center gap-3 mb-3">
-                      <span class="old-price">NPR149</span>
-                      <span class="price">NPR99</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="card package-card justify-content-between">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-img">
-                    <img
-                      src="./assets/image/gandhi-hospital-patients-3.jpg"
-                      alt="package image"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    class="card-body d-flex flex-column flex-grow-1 align-items-start"
-                  >
-                    <h3 class="h6">
-                      <a href="#">Standard cadiac checkup package</a>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <div class="price-box d-flex align-items-center gap-3 mb-3">
-                      <span class="old-price">NPR149</span>
-                      <span class="price">NPR99</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
-                      <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
-                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">Add to Cart</a>
                   </div>
                 </div>
               </div>
