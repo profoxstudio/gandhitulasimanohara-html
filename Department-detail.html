@@ -120,6 +120,76 @@
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+                <div class="cart-icon" id="cart-icon">
+                  <button
+                    class="btn btn-circle"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                  </button>
+
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                        Cart List
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="cart-item">
+                        <div class="row" style="padding-bottom: 20px;">
+                          <div class="col-md-4">
+                            <div class="d-flex align-items-center gap-3">
+                              <img
+                                src="./assets/image/gandhi-hospital-patients-3.jpg"
+                                alt="Health Package"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="cart-item-info">
+                              <h6>Health Package 1</h6>
+                              <p>Rs. 99</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 20px;">
+                          <div class="col-md-4">
+                            <div class="d-flex align-items-center gap-3">
+                              <img
+                                src="./assets/image/gandhi-hospital-patients-3.jpg"
+                                alt="Health Package"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="cart-item-info">
+                              <h6>Health Package 1</h6>
+                              <p>Rs. 99</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="./checkout.html" class="btn btn-primary"
+                        >Checkout</a
+                      >
+                    </div>
+                  </div>
+                </div>
 
                 <!-- Modal -->
                 <div
@@ -441,7 +511,7 @@
           <div class="col-md-3">
             <div class="card contact-card text-center">
               <div class="card-icon">
-                <i class="fa-solid fa-mobile-screen-button"></i>
+                <a href="tel:"><i class="fa-solid fa-mobile-screen-button"></i></a>
               </div>
               <div class="card-body">
                 <h4>Contact Hospital</h4>
@@ -452,7 +522,7 @@
           <div class="col-md-3">
             <div class="card contact-card text-center">
               <div class="card-icon">
-                <i class="fa-solid fa-phone-volume"></i>
+                <a href="tel:"><i class="fa-solid fa-phone-volume"></i></a>
               </div>
               <div class="card-body">
                 <h4>Emmergency Call</h4>
@@ -463,7 +533,31 @@
           <div class="col-md-3">
             <div class="card contact-card text-center">
               <div class="card-icon">
-                <i class="fa-solid fa-location-dot"></i>
+                <button
+                type="button"
+                class="contact-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#mapModal"
+              >
+              <i class="fa-solid fa-location-dot"></i>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="mapModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4346.840800593961!2d85.36573847611349!3d27.696573425965422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a308af57ec1%3A0xcc780ae6ea8e8495!2sGandhi%20Tulasi%20Manohara%20Community%20Hospital!5e1!3m2!1sen!2snp!4v1738049776967!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
               </div>
               <div class="card-body">
                 <h4>Map & Direction</h4>

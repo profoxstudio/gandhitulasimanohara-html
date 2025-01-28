@@ -306,7 +306,7 @@ ol {
   font-size: 16px;
   border: none;
 }
-.form-control:focus{
+.form-control:focus {
   border: none;
 }
 .dropdown {
@@ -835,6 +835,13 @@ ol {
 .contact-card {
   border-radius: 0;
 }
+.contact-card .contact-btn {
+  border: none;
+  border-radius: 50%;
+}
+.contact-card .modal-content {
+  width: 700px;
+}
 .contact-card .card-icon i {
   font-size: 35px;
   background: var(--bg-color);
@@ -1200,11 +1207,11 @@ ol {
   padding: 10px;
   transition: var(--transition);
 }
-.call:hover{
+.call:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
-.call:hover a{
+.call:hover a {
   color: var(--white-color);
 }
 .doctor-detail .swiper-button-next {
@@ -1226,21 +1233,21 @@ ol {
   width: 100%;
   max-width: 500px;
 }
-.open-popup .icon{
+.open-popup .icon {
   border: 0;
   background-color: transparent;
 }
-.enquiry-formPopup input{
+.enquiry-formPopup input {
   width: 100%;
   max-width: 300px;
   padding: 5px 10px;
 }
-.enquiry-formPopup select{
+.enquiry-formPopup select {
   width: 100%;
   max-width: 300px;
   padding: 5px 10px;
 }
-.enquiry-formPopup textarea{
+.enquiry-formPopup textarea {
   width: 100%;
   max-width: 300px;
   padding: 5px 10px;
@@ -1253,7 +1260,7 @@ ol {
 .enquiry-formPopup .form-group {
   margin-bottom: 20px;
 }
-#registered{
+#registered {
   width: 15px;
   margin: 0 170px;
   margin-right: 10px;
@@ -1272,7 +1279,6 @@ ol {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
-
 .speciality-search-header {
   padding: 30px;
   background-color: var(--white-color);
@@ -1378,7 +1384,102 @@ ol {
   width: 100%;
   outline: none;
 }
+.symptome-checker {
+  box-shadow: 1px 1px 20px #cccccc3d;
+  margin: 10px;
+  padding: 12px;
+}
 
+.checker-head {
+  margin-top: 10px;
+  font-size: 19px;
+  color: var(--black-color);
+}
+
+.man svg {
+  height: 245px;
+}
+
+.woman svg {
+  height: 240px;
+}
+
+.kid svg {
+  height: 180px;
+  width: 80%;
+}
+.opd-appointment .accordion-button:not(.collapsed) {
+  fill: var(--secondary-color);
+  cursor: pointer;
+}
+
+.opd-appointment .accordion-button:hover {
+  fill: var(--secondary-color);
+  cursor: pointer;
+}
+
+.opd-appointment .accordion-button {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.affected-organ img {
+  width: 42px;
+}
+
+.affected-organ {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.side-slider {
+  height: 280px;
+  overflow-y: scroll;
+}
+
+.affected-organ:hover {
+  background: linear-gradient(39deg, #01a056 40%, #35a16f, #bef7dc, #fff);
+}
+
+.affected-organ:hover p {
+  color: #fff;
+}
+
+.affected-organ p {
+  font-size: 13px;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  color: var(--black-color);
+}
+
+.select-symptoms {
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 13px 0;
+}
+
+.select-symptoms p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+.select-symptoms:hover p {
+  color: var(--secondary-color);
+}
 /* opd appointment css end */
 
 /* package detail css start */
@@ -1400,6 +1501,9 @@ ol {
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-left: 0;
   border-right: 0;
+}
+.popup-content p {
+  margin: 0;
 }
 /*appointment detail page css start */
 .img-bg {
@@ -1439,40 +1543,47 @@ ol {
 }
 
 /*Appointment form page css start */
-.appointment-form form{
+.appointment-form form {
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
   padding: 30px;
 }
-.appointment-form label{
+.appointment-form label {
   font-weight: 600;
 }
-.appointment-form select{
+.appointment-form select {
   border: 0;
   width: 100%;
   padding: 6px 12px;
 }
-.appointment-form .icon-input input{
+.appointment-form .icon-input input {
   border: 0;
 }
-.icon-input{
+.icon-input {
   border: 1px solid #dee2e6;
   padding: 6px 12px;
   border-radius: 8px;
 }
-.icon-input textarea{
+.icon-input textarea {
   width: 100%;
   border: 0;
 }
-.form-control:focus{
+.form-control:focus {
   box-shadow: none;
 }
-.icon-input i{
+.icon-input i {
   color: var(--primary-color);
 }
-.form-control:focus .icon-input{
+.form-control:focus .icon-input {
   border-color: var(--primary-color);
 }
+/*appointment form css end*/
+
+/*news page css start*/
+.detail-content p{
+  max-width: 850px;
+}
+/*news paage css end*/
 
 /* footer css start */
 .site-footer {
