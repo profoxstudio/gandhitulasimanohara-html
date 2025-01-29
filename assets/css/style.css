@@ -1583,7 +1583,32 @@ ol {
 .detail-content p{
   max-width: 850px;
 }
+.news-heading i{
+  color: var(--primary-color);
+}
+.package-list{
+  padding: 15px 0;
+  border: 1px solid #dee2e6;
+  border-left: 0;
+  border-right: 0;
+}
 /*news paage css end*/
+
+/*view cart page css start*/
+.cart-content{
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
+}
+.delete-icon i{
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.delete-icon i:hover{
+  color: var(--primary-hover-color);
+}
+/*view cart page css end*/ 
 
 /* footer css start */
 .site-footer {
