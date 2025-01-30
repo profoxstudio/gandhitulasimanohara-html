@@ -54,6 +54,28 @@ jQuery(document).ready(function ($) {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      575: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
   });
 
   // thumb silder
@@ -88,6 +110,28 @@ const packageSwiper = new Swiper(".package_swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    575: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    991: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1250: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 });
 const center = new Swiper(".speciality_center_swiper", {
