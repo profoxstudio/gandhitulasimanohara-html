@@ -366,6 +366,9 @@ ol {
   display: flex;
   cursor: pointer;
 }
+.cart-icon:hover i{
+  background-color: var(--primary-hover-color);
+}
 .cart-icon i {
   color: var(--white-color);
   background-color: var(--primary-color);
@@ -375,6 +378,7 @@ ol {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: var(--transition);
 }
 .cart-icon .cart-count {
   position: absolute;
@@ -388,6 +392,22 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.sideBar-btn{
+  color: var(--black-color);
+  background-color: transparent;
+  border: none;
+  margin-left: 20px;
+  display: none;
+}
+.sideBar-btn i{
+  font-size: 30px;
+}
+.primary-side-menu li a{
+  color: var(--body-color);
+}
+.primary-side-menu li a:hover{
+  color: var(--primary-color);
 }
 /* header css end */
 
@@ -1126,6 +1146,9 @@ ol {
 .accordion-item:first-child .accordion-button {
   border-bottom: 0;
 }
+.accordion-collapse{
+  transition: var(--transition);
+}
 .accordion-button:not(.collapsed) {
   background-color: transparent;
 }
@@ -1604,6 +1627,9 @@ ol {
   border-left: 0;
   border-right: 0;
 }
+.package-list figure{
+  max-width: 100px;
+}
 /*news paage css end*/
 
 /*view cart page css start*/
@@ -1614,11 +1640,12 @@ ol {
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
 }
 .delete-icon i{
-  background-color: transparent;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transition: var(--transition);
 }
-.delete-icon i:hover{
-  color: var(--primary-hover-color);
+.delete-icon:hover i{
+  background-color: var(--primary-hover-color);
 }
 /*view cart page css end*/ 
 
@@ -1716,23 +1743,52 @@ ol {
   .patient_swiper .patient-content {
     max-width: 350px;
 }
+
+.doctor-info {
+  background-position: left center;
+}
 }
 
 @media (max-width: 767.98px) {
   .patient_swiper .patient-content {
-    max-width: 300px;
+    max-width: 250px;
 }
 .patient_thumb_swiper{
   display: none;
 }
+.sideBar-btn{
+  display: block;
+}
+.primary-menu{
+  display: none;
+}
+.main-header{
+  padding: 10px 0;
+}
 
+.table-name{
+  display: none;
+}
+.decoPrice{
+  text-decoration:line-through;
+}
+
+.package-list figure{
+  max-width: fit-content;
+}
 }
 
 @media (max-width: 575.98px) {
   .patient_swiper .patient-content {
-    max-width: 250px;
+    max-width: 220px;
 }
 .banner-content{
   max-width: 350px;
 }
+}
+
+@media (max-width: 430px){
+  .patient_swiper .patient-content{
+    max-width: 150px;
+  }
 }

@@ -81,8 +81,8 @@
                   alt="Gandhi Hospital"
               /></a>
             </div>
-            <div class="menu-wrapper">
-              <nav class="primary-menu d-flex align-items-center gap-4">
+            <div class="menu-wrapper d-flex align-item-center jus">
+              <nav class="primary-menu d-lg-flex align-items-center gap-4">
                 <ul class="d-flex gap-4">
                   <li>
                     <a href="./About.html">About Us</a>
@@ -244,38 +244,70 @@
                   </div>
                 </div>
               </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+              <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul style="font-weight: 500;">
+                      <li class="mb-2">
+                        <a href="./About.html">About Us</a>
+                      </li>
+                      <li class="dropdown mb-2">
+                        <a class="dropbtn" href="#">Appointments</a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./opd-appointment.html">OPD Appointment</a>
+                          </li>
+                          <li>
+                            <a href="#">Immigration Medicle Examination</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./Department.html">Departments</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./health-package.html">Health Packages</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Career</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                      <li>
+                        <a href="./cart.html" class="btn btn-primary" style="color: var(--white-color);">Go to Cart</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <ul class="side-bar">
-        <li>
-          <a href="./About.html">About Us</a>
-        </li>
-        <li class="dropdown">
-          <a class="dropbtn" href="#">Appointments</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="./opd-appointment.html">OPD Appointment</a>
-            </li>
-            <li>
-              <a href="#">Immigration Medicle Examination</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="./Department.html">Departments</a>
-        </li>
-        <li>
-          <a href="./health-package.html">Health Packages</a>
-        </li>
-        <li>
-          <a href="#">Career</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul> -->
     </header>
     <!-- header html end -->
 
@@ -391,7 +423,7 @@
                       alt="facility-icon"
                     />
                   </a>
-                  <a href="./opd-appointment.html">
+                   <a href="./opd-appointment.html">
                     <img
                       class="white"
                       src="./assets/image/facility-icon2-white.svg"
@@ -1341,7 +1373,6 @@
               <h6 class="mb-4">Quick Links</h6>
               <ul>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Careers</a></li>
               </ul>

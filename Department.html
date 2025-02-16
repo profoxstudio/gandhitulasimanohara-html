@@ -62,7 +62,7 @@
                 ><i class="me-2 fa-solid fa-house-chimney-medical"></i>Home
                 Service</a
               >
-              <a href="#" class="btn-secondary btn-sm"
+              <a href="./opd-appointment.html" class="btn-secondary btn-sm"
                 ><i class="me-2 fa-solid fa-calendar-check"></i>Appointment</a
               >
             </div>
@@ -81,8 +81,8 @@
                   alt="Gandhi Hospital"
               /></a>
             </div>
-            <div class="menu-wrapper">
-              <nav class="primary-menu d-flex align-items-center gap-4">
+            <div class="menu-wrapper d-flex align-item-center jus">
+              <nav class="primary-menu d-lg-flex align-items-center gap-4">
                 <ul class="d-flex gap-4">
                   <li>
                     <a href="./About.html">About Us</a>
@@ -114,7 +114,7 @@
                 <!-- Button trigger modal -->
                 <button
                   type="button"
-                  class="btn btn-primary btn-circle"
+                  class="btn btn-primary btn-circle search-btn"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
@@ -151,7 +151,10 @@
                     </div>
                     <div class="offcanvas-body">
                       <div class="cart-item">
-                        <div class="row align-item-center" style="padding-bottom: 20px;">
+                        <div
+                          class="row align-item-center"
+                          style="padding-bottom: 20px"
+                        >
                           <div class="col-md-3">
                             <div class="d-flex align-items-center gap-3">
                               <img
@@ -162,44 +165,52 @@
                           </div>
                           <div class="col-md-6">
                             <div class="cart-item-info">
-                              <a href="./health-packageDetail.html">Standard cadiac checkup package</a>
+                              <a href="./health-packageDetail.html"
+                                >Standard cadiac checkup package</a
+                              >
                               <p class="mb-0">Rs. 99</p>
                             </div>
                           </div>
                           <div class="col-md-2">
-                              <div class="delete-icon">
-                                  <i class="fa-solid fa-trash-alt"></i>
-                              </div>
+                            <div class="delete-icon">
+                              <i class="fa-solid fa-trash-alt"></i>
+                            </div>
                           </div>
                         </div>
-                        <div class="row align-item-center" style="padding-bottom: 20px;">
+                        <div
+                          class="row align-item-center"
+                          style="padding-bottom: 20px"
+                        >
                           <div class="col-md-3">
-                              <img
-                                src="./assets/image/gandhi-hospital-patients-3.jpg"
-                                alt="Health Package"
-                              />
+                            <img
+                              src="./assets/image/gandhi-hospital-patients-3.jpg"
+                              alt="Health Package"
+                            />
                           </div>
                           <div class="col-md-6">
                             <div class="cart-item-info">
-                              <a href="./health-packageDetail.html">Standard cadiac checkup package</a>
+                              <a href="./health-packageDetail.html"
+                                >Standard cadiac checkup package</a
+                              >
                               <p>Rs. 99</p>
                             </div>
                           </div>
                           <div class="col-md-2">
-                              <div class="delete-icon">
-                                  <i class="fa-solid fa-trash-alt"></i>
-                              </div>
+                            <div class="delete-icon">
+                              <i class="fa-solid fa-trash-alt"></i>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <a href="./cart.html" class="btn btn-primary">View Cart</a>
+                      <a href="./cart.html" class="btn btn-primary"
+                        >View Cart</a
+                      >
                       <a href="./checkout.html" class="btn btn-primary"
                         >Checkout</a
                       >
                     </div>
                   </div>
                 </div>
-
                 <!-- Modal -->
                 <div
                   class="modal fade"
@@ -233,6 +244,66 @@
                   </div>
                 </div>
               </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+              <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul style="font-weight: 500;">
+                      <li class="mb-2">
+                        <a href="./About.html">About Us</a>
+                      </li>
+                      <li class="dropdown mb-2">
+                        <a class="dropbtn" href="#">Appointments</a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./opd-appointment.html">OPD Appointment</a>
+                          </li>
+                          <li>
+                            <a href="#">Immigration Medicle Examination</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./Department.html" style="color: var(--primary-color);">Departments</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./health-package.html">Health Packages</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Career</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                      <li>
+                        <a href="./cart.html" class="btn btn-primary" style="color: var(--white-color);">Go to Cart</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -399,7 +470,7 @@
 
     <section class="contact">
       <div class="row g-0">
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
               <a href="tel:"><i class="fa-solid fa-mobile-screen-button"></i></a>
@@ -410,7 +481,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
               <a href="tel:"><i class="fa-solid fa-phone-volume"></i></a>
@@ -421,7 +492,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
               <button
@@ -456,7 +527,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
               <a href="./heliAmbulance.html"><i class="fa-solid fa-helicopter"></i></a>
@@ -507,7 +578,6 @@
               <h6 class="mb-4">Quick Links</h6>
               <ul>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Careers</a></li>
               </ul>
