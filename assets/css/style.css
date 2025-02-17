@@ -309,6 +309,13 @@ ol {
 .form-control:focus {
   border: none;
 }
+.header-contact{
+  display: none;
+  font-size: 12px;
+}
+.header-contact a{
+  color: var(--white-color);
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1753,6 +1760,7 @@ ol {
   .patient_swiper .patient-content {
     max-width: 250px;
 }
+
 .patient_thumb_swiper{
   display: none;
 }
@@ -1784,6 +1792,9 @@ ol {
 }
 .banner-content{
   max-width: 350px;
+}
+.header-contact{
+  display: block;
 }
 }
 
