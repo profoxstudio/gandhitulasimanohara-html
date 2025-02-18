@@ -307,7 +307,7 @@ ol {
   border: none;
 }
 .form-control:focus {
-  border: none;
+  border: 1px solid var(--gray-color);
 }
 .header-contact{
   display: none;
@@ -1656,7 +1656,129 @@ ol {
 }
 /*view cart page css end*/ 
 
+/*immigration page css start*/
+.content-title{
+  border-bottom: 1px solid var(--body-color);
+  padding: 0;
+  font-weight: 600;
+}
+.title{
+  margin-bottom: 0;
+  padding: 10px;
+}
+.name-list li{
+  padding: 10px;
+}
+.name-list li:nth-child(odd){
+  background-color: rgb(223, 223, 223);
+}
+.country-record tr{
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+.country-record th, td{
+  padding:10px;
+}
+.country-record tr:nth-child(even){
+  background-color: rgba(223, 223, 223, 0.616);
+}
+.notice{
+  width: 100%;
+  max-width: 450px;
+  color: rgb(197, 196, 196);
+  border-bottom: 1px solid rgb(160, 159, 159);
+  padding: 20px 0;
+}
+.immigration-detail .accordion-item:first-child .accordion-button {
+  border: 1px solid rgb(160, 159, 159);
+}
+.immigration-detail .accordion-body{
+  border: 1px solid rgb(160, 159, 159);
+}
+.tests{
+margin-bottom: 40px;
+}
+.tests h6{
+  margin-bottom: 20px;
+  font-size: var(--body-font-size);
+}
+.tests p{
+  color: rgb(102, 102, 102);
+}
+/*immigration page css end*/
+
+/* career page css start */
+.login-header{
+  padding: 10px 0;
+}
+.vacancy-detail.block{
+  padding: 20px 0;
+}
+.vacancy-detail h1{
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(177, 177, 177);
+  padding-bottom: 30px;
+  color: var(--primary-color);
+  max-width: 1040px;
+}
+.vacancy-detail h1 span{
+  font-weight: 600;
+}
+.vacancy-detail h2{
+  color: var(--primary-color);
+  padding: 10px 0;
+  height: 150px;
+}
+/* career page css end */
+
+/* login page css start */
+  .login-form .card{
+    padding: 20px;
+  }
+  .section-title{
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--gray-color);
+    margin-bottom: 10px;
+  }
+  .login-form .form-group{
+    padding: 10px 0;
+  }
+  .login-form label{
+    margin-bottom: 5px;
+  }
+  .login-form button{
+    margin-bottom: 20px;
+  }
+  .login-form .login{
+    margin-top: 20px;
+  }
+/* login page css end */
+
+/* reset password page css start */
+  .passForgot-form form{
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+  }
+  .passForgot-form h1{
+    border-bottom: 1px solid var(--gray-color);
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  .passForgot-form label{
+    margin-bottom: 5px;
+  }
+  .passForgot-form .notice{
+    padding-top: 0;
+  }
+/* reste password page css end */
+
 /* footer css start */
+.main-header-wrapper{
+  padding: 10px 0;
+}
 .site-footer {
   background-color: var(--black-color);
   color: var(--white-color);
