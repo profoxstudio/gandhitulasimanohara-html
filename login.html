@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Immigration Medical Examination</title>
+    <title>LogIn</title>
     <link
       rel="stylesheet"
       href="./assets/vendors/swiper/swiper-bundle.min.css"
@@ -22,8 +22,8 @@
   <body>
     <!-- header html start -->
     <header class="site-header">
-      <div class="login-header d-flex justify-content-end align-item-center gap-3">
-            <a href="#" class="btn-secondary btn-sm">Login</a>
+      <div class="login-header gap-3">
+            <a href="./login.html" class="btn-secondary btn-sm">Login</a>
             <a href="./register.html" class="btn-secondary btn-sm"
               >Signup</a
             >
@@ -45,23 +45,23 @@
               <a href="tel:">+977-01-421 7766</a>
             </div>
             <div class="main-menu">
-              <ul class="d-flex align-item-center gap-2">
-                <li>
-                    <a href="#" class="d-flex align-item-center gap-2 btn btn-primary">
+              <ul class="d-flex align-items-center gap-2">
+                <li class="instruction">
+                    <a href="#" class="d-flex align-items-center gap-2 btn btn-primary">
                       <i class="fa-solid fa-folder-open"></i>
                       Instruction to Apply
                     </a>
                 </li>
                 <li>
-                  <a href="#" class="d-flex align-item-centergap-2 btn gap-2">
+                  <a href="./career.html" class="d-flex align-items-center gap-2 btn">
                     <i class="fa-solid fa-house"></i>
-                    Job List
+                    <span class="align">Job List</span>
                   </a>
                 </li>
                 <li>
-                  <a href="./index.html" class="d-flex align-item-center btn gap-2">
+                  <a href="./index.html" class="d-flex align-items-center gap-2 btn">
                     <i class="fa-solid fa-info"></i>
-                    About
+                    <span class="align">About</span>
                   </a>
                 </li>
               </ul>
@@ -74,14 +74,14 @@
 
     <section class="login-form block">
         <div class="container">
-            <div class="row">
+            <div class="row g-3">
                 <div class="col-md-8">
                     <form class="card">
                         <h1 class="h6 section-title">
                             Login 
                         </h1>
                         <div class="form-group">
-                            <label for="loginid">Login Id or Email</label>
+                            <label for="loginID">Login Id or Email</label>
                             <input type="text" class="form-control" name="loginid" id="loginID">
                         </div>
                         <div class="form-group">
@@ -104,9 +104,9 @@
                             Join with us
                         </h2>
                         <div class="text-center">
-                            <button class="btn btn-primary btn-sm w-100">
+                            <div class="btn btn-primary btn-sm w-100">
                                 <a href="./register.html" style="color: var(--white-color);">Register with us!</a>
-                            </button>
+                            </div>
                             <h3 class="h6">
                                 OR
                             </h3>
@@ -154,9 +154,9 @@
             <div class="footer-links">
               <h6 class="mb-4">Quick Links</h6>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./career.html">Careers</a></li>
               </ul>
             </div>
           </div>

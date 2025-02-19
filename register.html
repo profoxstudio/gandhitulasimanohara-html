@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Immigration Medical Examination</title>
+    <title>SignUp/Register</title>
     <link
       rel="stylesheet"
       href="./assets/vendors/swiper/swiper-bundle.min.css"
@@ -22,9 +22,7 @@
   <body>
     <!-- header html start -->
     <header class="site-header">
-      <div
-        class="login-header d-flex justify-content-end align-item-center gap-3"
-      >
+      <div class="login-header gap-3">
         <a href="./login.html" class="btn-secondary btn-sm">Login</a>
         <a href="./register.html" class="btn-secondary btn-sm">Signup</a>
       </div>
@@ -45,29 +43,23 @@
               <a href="tel:">+977-01-421 7766</a>
             </div>
             <div class="main-menu">
-              <ul class="d-flex align-item-center gap-2">
-                <li>
+              <ul class="d-flex align-items-center gap-2">
+                <li class="instruction">
                   <a
                     href="#"
-                    class="d-flex align-item-center gap-2 btn btn-primary"
+                    class="d-flex align-items-center gap-2 btn btn-primary"
                   >
                     <i class="fa-solid fa-folder-open"></i>
                     Instruction to Apply
                   </a>
                 </li>
                 <li>
-                  <a href="./career.html" class="d-flex align-item-centergap-2 btn gap-2">
+                  <a
+                    href="./career.html"
+                    class="d-flex align-items-center gap-2 btn gap-2"
+                  >
                     <i class="fa-solid fa-house"></i>
                     Job List
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="./index.html"
-                    class="d-flex align-item-center btn gap-2"
-                  >
-                    <i class="fa-solid fa-info"></i>
-                    About
                   </a>
                 </li>
               </ul>
@@ -151,12 +143,12 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="mobile"
+                <label for="mobileNo"
                   >Mobile <span style="color: red">*</span></label
                 >
                 <div class="icon-input d-flex align-items-center gap-2">
                   <i class="fa-solid fa-mobile-screen-button"></i>
-                  <input type="mobile" class="form-control" id="mobile" />
+                  <input type="tel" class="form-control" id="mobileNo" />
                 </div>
               </div>
             </div>
@@ -175,7 +167,7 @@
           <div class="row g-2" style="padding-bottom: 30px">
             <div class="col-md-6">
               <div class="form-group">
-                <label for="passowrd"
+                <label for="password"
                   >Password <span style="color: red">*</span></label
                 >
                 <div class="icon-input d-flex align-items-center gap-2">
@@ -186,14 +178,14 @@
 
             <div class="col-md-6">
               <div class="form-group">
-                <label for="conpassowrd"
+                <label for="conPassword"
                   >Confirm Password <span style="color: red">*</span></label
                 >
                 <div class="icon-input d-flex align-items-center gap-2">
                   <input
-                    type="conpassword"
+                    type="password"
                     class="form-control"
-                    id="conpassword"
+                    id="conPassword"
                   />
                 </div>
               </div>
@@ -202,19 +194,20 @@
 
           <div class="row g-2" style="padding-bottom: 30px">
             <div class="col-md-6">
-                <label for="experience">Experience Type</label>
-              <select name="experience" id="experience">
+              <label for="experience">Experience Type</label>
+              <select name="experience" id="experience" class="form-control">
                 <option value="none">--Select--</option>
                 <option value="Starter">Starter</option>
                 <option value="intermediate">Intermediate</option>
                 <option value="experienced">Experienced</option>
-
               </select>
             </div>
           </div>
 
           <div class="row g-2">
-            <div class="col-md-12 d-flex justify-content-end gap-3 align-item-center">
+            <div
+              class="col-md-12 d-flex justify-content-end gap-3 align-item-center"
+            >
               <!-- Button trigger modal -->
               <a href="./login.html" class="btn btn-primary btn-sm">
                 Register
@@ -227,6 +220,7 @@
         </form>
       </div>
     </div>
+
     <footer class="site-footer block">
       <div class="container">
         <div class="row gy-5">
@@ -263,9 +257,9 @@
             <div class="footer-links">
               <h6 class="mb-4">Quick Links</h6>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./career.html">Careers</a></li>
               </ul>
             </div>
           </div>
