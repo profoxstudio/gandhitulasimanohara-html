@@ -22,51 +22,117 @@
   <body>
     <!-- header html start -->
     <header class="site-header">
-        <div
-          class="login-header d-flex justify-content-end align-items-center gap-3"
-        >
-          <a href="./login.html" class="btn-secondary btn-sm">Login</a>
-          <a href="./register.html" class="btn-secondary btn-sm">Signup</a>
+      <div class="login-header">
+        <div class="container-fluid">
+          <div
+            class="top-header-wrapper d-flex justify-content-end align-items-center"
+          >
+            <ul class="d-flex align-items-center gap-4">
+              <li>
+                <a href="./login.html" class="btn btn-primary btn-sm">Log In</a>
+              </li>
+              <li>
+                <a href="./register.html" class="btn btn-primary btn-sm"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="main-header">
-          <div class="container-fluid">
-            <div
-              class="main-header-wrapper d-flex justify-content-between align-items-center"
-            >
-              <div class="site-logo">
-                <a href="./index.html"
-                  ><img
-                    src="./assets/image/gandhi-h-logo.png"
-                    alt="Gandhi Hospital"
-                /></a>
-              </div>
-              <div class="header-contact btn btn-sm btn-primary">
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:">+977-01-421 7766</a>
-              </div>
-              <div class="main-menu">
-                <ul class="d-flex align-items-center gap-2">
+      </div>
+      <div class="main-header">
+        <div class="container-fluid">
+          <div
+            class="main-header-wrapper d-flex justify-content-between align-items-center"
+          >
+            <div class="site-logo">
+              <a href="./index.html"
+                ><img
+                  src="./assets/image/gandhi-h-logo.png"
+                  alt="Gandhi Hospital"
+              /></a>
+            </div>
+            <div class="header-contact btn btn-sm btn-primary">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:">+977-01-421 7766</a>
+            </div>
+            <div class="menu-wrapper d-flex align-items-center jus">
+              <nav class="primary-menu d-lg-flex align-items-center gap-4">
+                <ul class="d-flex align-items-center gap-4">
                   <li>
-                    <a
-                      href="#"
-                      class="d-flex align-items-center gap-2 btn btn-primary"
-                    >
+                    <a href="#" class="btn btn-primary btn-sm">
                       <i class="fa-solid fa-folder-open"></i>
                       Instruction to Apply
                     </a>
                   </li>
                   <li>
-                    <a href="./career.html" class="d-flex align-items-centergap-2 btn gap-2">
-                      <i class="fa-solid fa-house"></i>
+                    <a href="./career.html">
+                      <i class="fa-solid fa-house-chimney"></i>
                       Job List
                     </a>
                   </li>
+                  <li>
+                    <a href="./index.html">
+                      <i class="fa-solid fa-info"></i>
+                      About Us
+                    </a>
+                  </li>
                 </ul>
+              </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul class="d-flex flex-column">
+                      <li>
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-folder-open"></i>
+                          Instruction to Apply
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./career.html" style="margin: 20px 0">
+                          <i class="fa-solid fa-house-chimney"></i>
+                          Job List
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./index.html">
+                          <i class="fa-solid fa-info"></i>
+                          About Us
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
     <!-- header html end -->
     <!-- start page header html -->
     <div class="appointment-form block">
@@ -189,61 +255,65 @@
             </div>
           </div>
 
-          <div class="row g-2" style="padding-bottom: 30px">
+          <div class="row" style="padding-bottom: 30px">
             <div class="col-md-2">
               <div class="form-group">
-                <label for="gender">Gender</label>
+                <label for="title">Title</label>
                 <div class="icon-input d-flex align-items-center gap-2">
                   <i class="fa-solid fa-venus-mars"></i>
                   <select name="gender" id="gender">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
+                    <option value="none">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
                   </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="dob">Date of birth</label>
-                <div class="icon-input d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-calendar"></i>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="dob"
-                    placeholder="mm-dd-yyyy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="mobNumber">Contact Number (+977)</label>
-                <div class="icon-input d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-mobile-screen-button"></i>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="mobNumber"
-                    placeholder="Contact Number"
-                  />
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="dob">Date of Birth</label>
                 <div class="icon-input d-flex align-items-center gap-2">
-                  <i class="fa-solid fa-at"></i>
+                  <i class="fa-solid fa-calendar"></i>
                   <input
-                    type="email"
+                    type="text"
+                    name="dob"
+                    id="dob"
+                    placeholder="dd/mm/yyyy"
                     class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="phone">Phone Number (+977)</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Required, Phone Number"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                    type="text"
+                    name="email"
                     id="email"
-                    placeholder="Email Address"
+                    placeholder="Required, Enter Email"
+                    class="form-control"
                   />
                 </div>
               </div>
@@ -260,7 +330,7 @@
                     type="text"
                     class="form-control"
                     id="address"
-                    placeholder="Required, Address"
+                    placeholder="Address"
                   />
                 </div>
               </div>

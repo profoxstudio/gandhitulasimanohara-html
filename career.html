@@ -22,11 +22,23 @@
   <body>
     <!-- header html start -->
     <header class="site-header">
-      <div class="login-header gap-3">
-            <a href="./login.html" class="btn-secondary btn-sm">Login</a>
-            <a href="./register.html" class="btn-secondary btn-sm"
-              >Signup</a
-            >
+      <div class="login-header">
+        <div class="container-fluid">
+          <div
+            class="top-header-wrapper d-flex justify-content-end align-items-center"
+          >
+            <ul class="d-flex align-items-center gap-4">
+              <li>
+                <a href="./login.html" class="btn btn-primary btn-sm">Log In</a>
+              </li>
+              <li>
+                <a href="./register.html" class="btn btn-primary btn-sm"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="main-header">
         <div class="container-fluid">
@@ -40,21 +52,82 @@
                   alt="Gandhi Hospital"
               /></a>
             </div>
-            <div class="main-menu">
-              <ul class="d-flex align-items-center gap-2">
-                <li class="instruction">
-                    <a href="#" class="d-flex align-items-center gap-2 btn btn-primary">
+            <div class="header-contact btn btn-sm btn-primary">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:">+977-01-421 7766</a>
+            </div>
+            <div class="menu-wrapper d-flex align-items-center jus">
+              <nav class="primary-menu d-lg-flex align-items-center gap-4">
+                <ul class="d-flex align-items-center gap-4">
+                  <li>
+                    <a href="#" class="btn btn-primary btn-sm">
                       <i class="fa-solid fa-folder-open"></i>
                       Instruction to Apply
                     </a>
-                </li>
-                <li>
-                  <a href="./career.html" class="d-flex align-items-center gap-2 btn gap-2">
-                    <i class="fa-solid fa-house"></i>
-                    Job List
-                  </a>
-                </li>
-              </ul>
+                  </li>
+                  <li>
+                    <a href="./career.html">
+                      <i class="fa-solid fa-house-chimney"></i>
+                      Job List
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./index.html">
+                      <i class="fa-solid fa-info"></i>
+                      About Us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul class="d-flex flex-column">
+                      <li>
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-folder-open"></i>
+                          Instruction to Apply
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./career.html" style="margin: 20px 0">
+                          <i class="fa-solid fa-house-chimney"></i>
+                          Job List
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./index.html">
+                          <i class="fa-solid fa-info"></i>
+                          About Us
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -252,6 +252,7 @@ ol {
 .breadcrumb .active {
   color: var(--primary-color);
   font-weight: 600;
+  margin: 0;
 }
 .breadcrumb .active:hover {
   color: var(--primary-color);
@@ -293,12 +294,34 @@ ol {
   height: auto;
   width: 70px;
 }
-.primary-menu ul li a {
+.primary-menu ul li .btn{
+  color: var(--white-color);
+}
+.primary-menu ul li .btn:hover{
+  color: var(--white-color);
+}
+.primary-side-menu ul li .btn{
+  color: var(--white-color);
+}
+.primary-side-menu ul li .btn:hover{
+  color: var(--white-color);
+}
+.primary-menu ul li a{
   display: block;
-  padding: 35px 0;
   color: var(--black-color);
   font-size: 14px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.primary-menu ul i{
+  margin-right: 10px;
+}
+.primary-side-menu ul li{
+  margin-bottom: 20px;
+}
+.primary-side-menu ul i{
+  margin-right: 10px;
 }
 .dropbtn {
   color: var(--black-color);
@@ -1251,7 +1274,7 @@ ol {
   opacity: 1;
   position: relative;
   top: 0;
-  left: 90%;
+  left: 95%;
   margin-top: -56px;
 }
 .doctor-detail .swiper-button-prev {
@@ -1260,7 +1283,7 @@ ol {
   top: 0;
   right: 0;
   margin-top: -56px;
-  margin-left: -70px;
+  margin-left: -80px;
 }
 .enquiry-formPopup {
   width: 100%;
@@ -1606,6 +1629,7 @@ ol {
 .appointment-form select {
   width: 100%;
   padding: 6px 12px;
+  border: 0;
 }
 .appointment-form .icon-input input {
   border: 0;
@@ -1951,6 +1975,13 @@ td {
   }
   .instruction {
     display: none;
+  }
+  .country-record,
+  .notice{
+    display: none;
+  }
+  .list-edit{
+    margin-top: 20px;
   }
 }
 

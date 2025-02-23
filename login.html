@@ -22,11 +22,23 @@
   <body>
     <!-- header html start -->
     <header class="site-header">
-      <div class="login-header gap-3">
-            <a href="./login.html" class="btn-secondary btn-sm">Login</a>
-            <a href="./register.html" class="btn-secondary btn-sm"
-              >Signup</a
-            >
+      <div class="login-header">
+        <div class="container-fluid">
+          <div
+            class="top-header-wrapper d-flex justify-content-end align-items-center"
+          >
+            <ul class="d-flex align-items-center gap-4">
+              <li>
+                <a href="./login.html" class="btn btn-primary btn-sm">Log In</a>
+              </li>
+              <li>
+                <a href="./register.html" class="btn btn-primary btn-sm"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="main-header">
         <div class="container-fluid">
@@ -44,27 +56,78 @@
               <i class="fa-solid fa-phone"></i>
               <a href="tel:">+977-01-421 7766</a>
             </div>
-            <div class="main-menu">
-              <ul class="d-flex align-items-center gap-2">
-                <li class="instruction">
-                    <a href="#" class="d-flex align-items-center gap-2 btn btn-primary">
+            <div class="menu-wrapper d-flex align-items-center jus">
+              <nav class="primary-menu d-lg-flex align-items-center gap-4">
+                <ul class="d-flex align-items-center gap-4">
+                  <li>
+                    <a href="#" class="btn btn-primary btn-sm">
                       <i class="fa-solid fa-folder-open"></i>
                       Instruction to Apply
                     </a>
-                </li>
-                <li>
-                  <a href="./career.html" class="d-flex align-items-center gap-2 btn">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="align">Job List</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./index.html" class="d-flex align-items-center gap-2 btn">
-                    <i class="fa-solid fa-info"></i>
-                    <span class="align">About</span>
-                  </a>
-                </li>
-              </ul>
+                  </li>
+                  <li>
+                    <a href="./career.html">
+                      <i class="fa-solid fa-house-chimney"></i>
+                      Job List
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./index.html">
+                      <i class="fa-solid fa-info"></i>
+                      About Us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul class="d-flex flex-column">
+                      <li>
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-folder-open"></i>
+                          Instruction to Apply
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./career.html" style="margin: 20px 0">
+                          <i class="fa-solid fa-house-chimney"></i>
+                          Job List
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./index.html">
+                          <i class="fa-solid fa-info"></i>
+                          About Us
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -73,49 +136,61 @@
     <!-- header html end -->
 
     <section class="login-form block">
-        <div class="container">
-            <div class="row g-3">
-                <div class="col-md-8">
-                    <form class="card">
-                        <h1 class="h6 section-title">
-                            Login 
-                        </h1>
-                        <div class="form-group">
-                            <label for="loginID">Login Id or Email</label>
-                            <input type="text" class="form-control" name="loginid" id="loginID">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" name="password" id="password">
-                        </div>
-                        <div class="button-group d-flex align-item-center justify-content-between">
-                            <div class="passForgot">
-                                <a href="./forgot-passwrd.html" class="btn">Forgot Password?</a>
-                            </div>
-                            <div class="login-btn">
-                                <a href="#" class="btn btn-primary">Login</a>
-                            </div>
-                        </div>
-                    </form>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-8">
+            <form class="card">
+              <h1 class="h6 section-title">Login</h1>
+              <div class="form-group">
+                <label for="loginID">Login Id or Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="loginid"
+                  id="loginID"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  id="password"
+                />
+              </div>
+              <div class="row g-3 align-items-center text-center">
+                <div class="col-md-6">
+                  <div class="passForgot">
+                    <a href="./forgot-passwrd.html" class="btn"
+                      >Forgot Password?</a
+                    >
+                  </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <h2 class="h6 section-title">
-                            Join with us
-                        </h2>
-                        <div class="text-center">
-                            <div class="btn btn-primary btn-sm w-100">
-                                <a href="./register.html" style="color: var(--white-color);">Register with us!</a>
-                            </div>
-                            <h3 class="h6">
-                                OR
-                            </h3>
-                            <a href="./login.html" class="login">Log in</a>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="login-btn">
+                    <a href="#" class="btn btn-primary">Login</a>
+                  </div>
                 </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h2 class="h6 section-title">Join with us</h2>
+              <div class="text-center">
+                <div class="btn btn-primary btn-sm w-100">
+                  <a href="./register.html" style="color: var(--white-color)"
+                    >Register with us!</a
+                  >
+                </div>
+                <h3 class="h6" style="margin: 20px 0">OR</h3>
+                <a href="./login.html" class="login">Log in</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="site-footer block">
