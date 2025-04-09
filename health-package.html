@@ -40,7 +40,7 @@
                   class="top-header-icon d-flex align-items-center justify-content-center"
                   ><i class="fa-solid fa-phone"></i
                 ></span>
-                <a href="tel:"><span> +977-01-421 7766</span></a>
+                <a href="tel:"> +977-01-421 7766</a>
               </li>
               <li class="d-flex align-items-center gap-2 flex-shrink-0">
                 <span
@@ -62,7 +62,7 @@
                 ><i class="me-2 fa-solid fa-house-chimney-medical"></i>Home
                 Service</a
               >
-              <a href="#" class="btn-secondary btn-sm"
+              <a href="./opd-appointment.html" class="btn-secondary btn-sm"
                 ><i class="me-2 fa-solid fa-calendar-check"></i>Appointment</a
               >
             </div>
@@ -81,8 +81,12 @@
                   alt="Gandhi Hospital"
               /></a>
             </div>
-            <div class="menu-wrapper">
-              <nav class="primary-menu d-flex align-items-center gap-4">
+            <div class="header-contact btn btn-sm btn-primary">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:">+977-01-421 7766</a>
+            </div>
+            <div class="menu-wrapper d-flex align-item-center jus">
+              <nav class="primary-menu d-lg-flex align-items-center gap-4">
                 <ul class="d-flex gap-4">
                   <li>
                     <a href="./About.html">About Us</a>
@@ -94,7 +98,7 @@
                         <a href="./opd-appointment.html">OPD Appointment</a>
                       </li>
                       <li>
-                        <a href="#">Immigration Medicle Examination</a>
+                        <a href="./immigration.html">Immigration Medicle Examination</a>
                       </li>
                     </ul>
                   </li>
@@ -102,10 +106,10 @@
                     <a href="./Department.html">Departments</a>
                   </li>
                   <li>
-                    <a href="./health-package.html">Health Packages</a>
+                    <a href="./health-package.html" style="color: var(--primary-color);">Health Packages</a>
                   </li>
                   <li>
-                    <a href="#">Career</a>
+                    <a href="./career.html">Career</a>
                   </li>
                   <li>
                     <a href="./contact.html">Contact</a>
@@ -114,17 +118,103 @@
                 <!-- Button trigger modal -->
                 <button
                   type="button"
-                  class="btn btn-primary btn-circle"
+                  class="btn btn-primary btn-circle search-btn"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
                 <div class="cart-icon" id="cart-icon">
-                  <i class="fa-solid fa-shopping-cart"></i>
-                  <span class="cart-count"></span>
-                </div>
+                  <button
+                    class="btn btn-circle"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                  </button>
 
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                        Cart List
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="cart-item">
+                        <div
+                          class="row align-item-center"
+                          style="padding-bottom: 20px"
+                        >
+                          <div class="col-md-3">
+                            <div class="d-flex align-items-center gap-3">
+                              <img
+                                src="./assets/image/gandhi-hospital-patients-3.jpg"
+                                alt="Health Package"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="cart-item-info">
+                              <a href="./health-packageDetail.html"
+                                >Standard cadiac checkup package</a
+                              >
+                              <p class="mb-0">Rs. 99</p>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="delete-icon">
+                              <i class="fa-solid fa-trash-alt"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="row align-item-center"
+                          style="padding-bottom: 20px"
+                        >
+                          <div class="col-md-3">
+                            <img
+                              src="./assets/image/gandhi-hospital-patients-3.jpg"
+                              alt="Health Package"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <div class="cart-item-info">
+                              <a href="./health-packageDetail.html"
+                                >Standard cadiac checkup package</a
+                              >
+                              <p>Rs. 99</p>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="delete-icon">
+                              <i class="fa-solid fa-trash-alt"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="./cart.html" class="btn btn-primary"
+                        >View Cart</a
+                      >
+                      <a href="./checkout.html" class="btn btn-primary"
+                        >Checkout</a
+                      >
+                    </div>
+                  </div>
+                </div>
                 <!-- Modal -->
                 <div
                   class="modal fade"
@@ -158,6 +248,66 @@
                   </div>
                 </div>
               </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+              <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul style="font-weight: 500;">
+                      <li class="mb-2">
+                        <a href="./About.html">About Us</a>
+                      </li>
+                      <li class="dropdown mb-2">
+                        <a class="dropbtn" href="#">Appointments</a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./opd-appointment.html">OPD Appointment</a>
+                          </li>
+                          <li>
+                            <a href="./immigration.html">Immigration Medicle Examination</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./Department.html">Departments</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./health-package.html" style="color: var(--primary-color);">Health Packages</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./career.html">Career</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                      <li>
+                        <a href="./cart.html" class="btn btn-primary" style="color: var(--white-color);">Go to Cart</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -208,7 +358,31 @@
                       <span class="price">NPR99</span>
                     </div>
                     <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                      <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cartModal1"
+                  >
+                    Add to Cart
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="cartModal1"
+                    tabindex="-1"
+                    aria-labelledby="cartModal1"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          Package sucessfully added to cart
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                       <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
                     </div>
                   </div>
@@ -242,7 +416,31 @@
                       <span class="price">NPR99</span>
                     </div>
                     <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                      <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cartModal2"
+                  >
+                    Add to Cart
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="cartModal2"
+                    tabindex="-1"
+                    aria-labelledby="cartModal2"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          Package sucessfully added to cart
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                       <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
                     </div>
                   </div>
@@ -276,7 +474,31 @@
                       <span class="price">NPR99</span>
                     </div>
                     <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                      <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cartModal3"
+                  >
+                    Add to Cart
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="cartModal3"
+                    tabindex="-1"
+                    aria-labelledby="cartModal3"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          Package sucessfully added to cart
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                       <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
                     </div>
                   </div>
@@ -310,7 +532,31 @@
                       <span class="price">NPR99</span>
                     </div>
                     <div class="d-flex align-items-center gap-3">
-                      <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                      <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#cartModal4"
+                  >
+                    Add to Cart
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="cartModal4"
+                    tabindex="-1"
+                    aria-labelledby="cartModal4"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          Package sucessfully added to cart
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                       <a href="./health-packageDetail.html" class="btn btn-secondary btn-sm">View detail</a>
                     </div>
                   </div>
@@ -324,8 +570,8 @@
 
     <footer class="site-footer block">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-md-3">
+        <div class="row gy-5">
+          <div class="col-md-6 col-lg-3">
             <div class="footer-about">
               <div class="footer-logo d-flex align-items-center gap-2 mb-4">
                 <a class="footer-logo-img" href="index.html"
@@ -354,18 +600,17 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2 offset-md-1">
+          <div class="col-md-6 col-lg-2 offset-lg-1">
             <div class="footer-links">
               <h6 class="mb-4">Quick Links</h6>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./career.html">Careers</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3">
             <div class="working-shedule">
               <h6 class="mb-4">Working Time</h6>
               <ul>
@@ -375,7 +620,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3">
             <div class="footer-conatact">
               <h6 class="mb-4">Contact Us</h6>
               <ul>
@@ -390,7 +635,7 @@
                     <i class="fa-solid fa-envelope"></i>
                   </span>
                   <a href="mailto:gandhitulasimanohara@gmail.com"
-                    >gandhitulasimanohara@gmail.com</a
+                    >gandhiHospital@gmail.com</a
                   >
                 </li>
                 <li class="d-flex align-items-center gap-2">

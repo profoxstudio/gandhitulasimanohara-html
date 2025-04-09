@@ -62,7 +62,7 @@
                 ><i class="me-2 fa-solid fa-house-chimney-medical"></i>Home
                 Service</a
               >
-              <a href="#" class="btn-secondary btn-sm"
+              <a href="./opd-appointment.html" class="btn-secondary btn-sm"
                 ><i class="me-2 fa-solid fa-calendar-check"></i>Appointment</a
               >
             </div>
@@ -81,8 +81,12 @@
                   alt="Gandhi Hospital"
               /></a>
             </div>
-            <div class="menu-wrapper">
-              <nav class="primary-menu d-flex align-items-center gap-4">
+            <div class="header-contact btn btn-sm btn-primary">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:">+977-01-421 7766</a>
+            </div>
+            <div class="menu-wrapper d-flex align-item-center jus">
+              <nav class="primary-menu d-lg-flex align-items-center gap-4">
                 <ul class="d-flex gap-4">
                   <li>
                     <a href="./About.html">About Us</a>
@@ -94,7 +98,7 @@
                         <a href="./opd-appointment.html">OPD Appointment</a>
                       </li>
                       <li>
-                        <a href="#">Immigration Medicle Examination</a>
+                        <a href="./immigration.html">Immigration Medicle Examination</a>
                       </li>
                     </ul>
                   </li>
@@ -105,7 +109,7 @@
                     <a href="./health-package.html">Health Packages</a>
                   </li>
                   <li>
-                    <a href="#">Career</a>
+                    <a href="./career.html">Career</a>
                   </li>
                   <li>
                     <a href="./contact.html">Contact</a>
@@ -114,13 +118,103 @@
                 <!-- Button trigger modal -->
                 <button
                   type="button"
-                  class="btn btn-primary btn-circle"
+                  class="btn btn-primary btn-circle search-btn"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+                <div class="cart-icon" id="cart-icon">
+                  <button
+                    class="btn btn-circle"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                  </button>
 
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                        Cart List
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="cart-item">
+                        <div
+                          class="row align-item-center"
+                          style="padding-bottom: 20px"
+                        >
+                          <div class="col-md-3">
+                            <div class="d-flex align-items-center gap-3">
+                              <img
+                                src="./assets/image/gandhi-hospital-patients-3.jpg"
+                                alt="Health Package"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="cart-item-info">
+                              <a href="./health-packageDetail.html"
+                                >Standard cadiac checkup package</a
+                              >
+                              <p class="mb-0">Rs. 99</p>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="delete-icon">
+                              <i class="fa-solid fa-trash-alt"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="row align-item-center"
+                          style="padding-bottom: 20px"
+                        >
+                          <div class="col-md-3">
+                            <img
+                              src="./assets/image/gandhi-hospital-patients-3.jpg"
+                              alt="Health Package"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <div class="cart-item-info">
+                              <a href="./health-packageDetail.html"
+                                >Standard cadiac checkup package</a
+                              >
+                              <p>Rs. 99</p>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="delete-icon">
+                              <i class="fa-solid fa-trash-alt"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="./cart.html" class="btn btn-primary"
+                        >View Cart</a
+                      >
+                      <a href="./checkout.html" class="btn btn-primary"
+                        >Checkout</a
+                      >
+                    </div>
+                  </div>
+                </div>
                 <!-- Modal -->
                 <div
                   class="modal fade"
@@ -154,6 +248,66 @@
                   </div>
                 </div>
               </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+              <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul style="font-weight: 500;">
+                      <li class="mb-2">
+                        <a href="./About.html">About Us</a>
+                      </li>
+                      <li class="dropdown mb-2">
+                        <a class="dropbtn" href="#">Appointments</a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="./opd-appointment.html">OPD Appointment</a>
+                          </li>
+                          <li>
+                            <a href="./immigration.html">Immigration Medicle Examination</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./Department.html">Departments</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./health-package.html">Health Packages</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./career.html">Career</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                      <li>
+                        <a href="./cart.html" class="btn btn-primary" style="color: var(--white-color);">Go to Cart</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -168,7 +322,7 @@
             Fill your detail
           </h2>
           <div
-            class="row"
+            class="row g-2"
             style="
               padding-bottom: 40px;
               margin-bottom: 40px;
@@ -177,7 +331,7 @@
           >
             <div class="col-md-4">
               <div class="form-group">
-                <label for="dname">Doctor Name *</label>
+                <label for="dname">Doctor Name</label>
                 <input
                   type="text"
                   class="form-control"
@@ -188,7 +342,7 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="appointTime">Appointment Date *</label>
+                <label for="appointTime">Appointment Date</label>
                 <input
                   type="text"
                   class="form-control"
@@ -199,7 +353,7 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="appointTime">Appointment Time *</label>
+                <label for="appointTime">Appointment Time</label>
                 <input
                   type="text"
                   class="form-control"
@@ -239,7 +393,7 @@
             </div>
           </div>
 
-          <div class="row" style="padding-bottom: 30px">
+          <div class="row g-2" style="padding-bottom: 30px">
             <div class="col-md-4">
               <div class="form-group">
                 <label for="NMCnumber">NMC Number</label>
@@ -283,7 +437,7 @@
             </div>
           </div>
 
-          <div class="row" style="padding-bottom: 30px">
+          <div class="row g-2" style="padding-bottom: 30px">
             <div class="col-md-4">
               <div class="form-group">
                 <label for="mobNum">Mobile Number</label>
@@ -327,7 +481,7 @@
               </div>
             </div>
 
-            <div class="row" style="padding-bottom: 30px">
+            <div class="row g-2" style="padding-bottom: 30px">
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="address">Address</label>
@@ -350,7 +504,32 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div class="btn btn-primary">Submit & Continue</div>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#appointModal"
+              >
+                Submit & Continue
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="appointModal"
+                tabindex="-1"
+                aria-labelledby="appointModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      Doctor Appointment Sucessfull
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </form>
@@ -359,10 +538,10 @@
 
     <section class="contact">
       <div class="row g-0">
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
-              <i class="fa-solid fa-mobile-screen-button"></i>
+              <a href="tel:"><i class="fa-solid fa-mobile-screen-button"></i></a>
             </div>
             <div class="card-body">
               <h4>Contact Hospital</h4>
@@ -370,10 +549,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
-              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:"><i class="fa-solid fa-phone-volume"></i></a>
             </div>
             <div class="card-body">
               <h4>Emmergency Call</h4>
@@ -381,10 +560,34 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
+              <button
+                type="button"
+                class="contact-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#mapModal"
+              >
               <i class="fa-solid fa-location-dot"></i>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="mapModal"
+                tabindex="-1"
+                aria-labelledby="mapModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4346.840800593961!2d85.36573847611349!3d27.696573425965422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a308af57ec1%3A0xcc780ae6ea8e8495!2sGandhi%20Tulasi%20Manohara%20Community%20Hospital!5e1!3m2!1sen!2snp!4v1738049776967!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-body">
               <h4>Map & Direction</h4>
@@ -392,12 +595,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-6 col-xl-3">
           <div class="card contact-card text-center">
             <div class="card-icon">
-              <a href="./heliAmbulance.html"
-                ><i class="fa-solid fa-helicopter"></i
-              ></a>
+              <a href="./heliAmbulance.html"><i class="fa-solid fa-helicopter"></i></a>
             </div>
             <div class="card-body">
               <h4>Heli Rescue</h4>
@@ -410,8 +611,8 @@
 
     <footer class="site-footer block">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-md-3">
+        <div class="row gy-5">
+          <div class="col-md-6 col-lg-3">
             <div class="footer-about">
               <div class="footer-logo d-flex align-items-center gap-2 mb-4">
                 <a class="footer-logo-img" href="index.html"
@@ -440,18 +641,17 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2 offset-md-1">
+          <div class="col-md-6 col-lg-2 offset-lg-1">
             <div class="footer-links">
               <h6 class="mb-4">Quick Links</h6>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./career.html">Careers</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3">
             <div class="working-shedule">
               <h6 class="mb-4">Working Time</h6>
               <ul>
@@ -461,7 +661,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3">
             <div class="footer-conatact">
               <h6 class="mb-4">Contact Us</h6>
               <ul>
@@ -476,7 +676,90 @@
                     <i class="fa-solid fa-envelope"></i>
                   </span>
                   <a href="mailto:gandhitulasimanohara@gmail.com"
-                    >gandhitulasimanohara@gmail.com</a
+                    >gandhiHospital@gmail.com</a
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <p class="mb-0">
+                    Kageshwori Manohara 9, Kadaghari, Kathmandu, Nepal
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><footer class="site-footer block">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-about">
+              <div class="footer-logo d-flex align-items-center gap-2 mb-4">
+                <a class="footer-logo-img" href="index.html"
+                  ><img src="./assets/image/gandhi-h-logo.png" alt="site logo"
+                /></a>
+                <h2 class="h4"><a href="index.html">Gandhi Hospital</a></h2>
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur egestas eu nunc dignissim feugiat. Fusce iaculis purus
+                non velit rhoncus tempus.
+              </p>
+              <div class="footer-social-icon d-flex gap-3 align-items-center">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 offset-lg-1">
+            <div class="footer-links">
+              <h6 class="mb-4">Quick Links</h6>
+              <ul>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./career.html">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="working-shedule">
+              <h6 class="mb-4">Working Time</h6>
+              <ul>
+                <li>Sunday - Thusday: 9:00 AM - 5:00 PM</li>
+                <li>Friday: 9:00 AM - 1:00 PM</li>
+                <li>Saturday: Closed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-conatact">
+              <h6 class="mb-4">Contact Us</h6>
+              <ul>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <a href="tel:9800000000">9800000000</a>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <a href="mailto:gandhitulasimanohara@gmail.com"
+                    >gandhiHospital@gmail.com</a
                   >
                 </li>
                 <li class="d-flex align-items-center gap-2">
