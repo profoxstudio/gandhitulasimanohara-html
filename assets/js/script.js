@@ -38,9 +38,13 @@ jQuery(document).ready(function ($) {
       el: ".banner .swiper-pagination",
       clickable: true,
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
-// doner slider
+  // doner slider
   const exccellence = new Swiper(".exccellence-swiper", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -55,7 +59,7 @@ jQuery(document).ready(function ($) {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      320: {
+      0: {
         slidesPerView: 1,
         spaceBetween: 30,
       },
@@ -97,96 +101,96 @@ jQuery(document).ready(function ($) {
       swiper: swiper,
     },
   });
-// condolence slider
-const packageSwiper = new Swiper(".package_swiper", {
-  slidesPerView: 3,
-  spaceBetween: 24,
-  loop: true,
-  speed: 800,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 30,
+  // condolence slider
+  const packageSwiper = new Swiper(".package_swiper", {
+    slidesPerView: 3,
+    spaceBetween: 24,
+    loop: true,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
-    575: {
-      slidesPerView: 1,
-      spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      575: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1250: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
     },
-    991: {
-      slidesPerView: 2,
-      spaceBetween: 30,
+  });
+  const center = new Swiper(".speciality_center_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
-    1250: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-  },
-});
-const center = new Swiper(".speciality_center_swiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  speed: 800,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-var swiper = new Swiper(".eventSwiper", {
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 30,
-  speed: 800,
-  autoplay: {
-    delay: 2000,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 30,
+  });
+  var swiper = new Swiper(".eventSwiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    speed: 800,
+    autoplay: {
+      delay: 2000,
     },
-    575: {
-      slidesPerView: 2,
-      spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
     },
-    991: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1025: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-  },
-});
-const tooltipTriggerList = $('[data-bs-toggle="tooltip"]');
-tooltipTriggerList.each(function() {
+  });
+  const tooltipTriggerList = $('[data-bs-toggle="tooltip"]');
+  tooltipTriggerList.each(function () {
     new bootstrap.Tooltip(this);
-});
+  });
 
   // //   counter
   // var a = 0;
@@ -240,51 +244,78 @@ tooltipTriggerList.each(function() {
 
 
   //memer tab script
-    // Switch to Address Tab using jQuery
-    $('#nextToAddress').on('click', function() {
-      $('#address-tab').tab('show');
+  // Switch to Address Tab using jQuery
+  $('#nextToAddress').on('click', function () {
+    $('#address-tab').tab('show');
   });
 
   // Switch to Contact Tab using jQuery
-  $('#nextToContact').on('click', function() {
-      $('#contact-tab').tab('show');
+  $('#nextToContact').on('click', function () {
+    $('#contact-tab').tab('show');
   });
-  $('#nextToFamily').on('click', function() {
+  $('#nextToFamily').on('click', function () {
     $('#family-tab').tab('show');
-});
-$('#familyFormTemplate').click(function(){
-  $('#familyFormTemplate').toggle();
-  $(this).hide(); 
-});
-$('#addBtn').click(function(){
-  var newForm = $('#familyFormTemplate').clone().removeAttr('id').show();
-  $('#formsContainer').append(newForm); 
-  $('#submitContainer').show().appendTo(newForm);
-  newForm.find('.removeBtn').click(function(){
+  });
+  $('#familyFormTemplate').click(function () {
+    $('#familyFormTemplate').toggle();
+    $(this).hide();
+  });
+  $('#addBtn').click(function () {
+    var newForm = $('#familyFormTemplate').clone().removeAttr('id').show();
+    $('#formsContainer').append(newForm);
+    $('#submitContainer').show().appendTo(newForm);
+    newForm.find('.removeBtn').click(function () {
       $(this).closest('.familyFormInstance').remove();
       if ($('.familyFormInstance').length === 0) {
-          $('#submitContainer').hide();
+        $('#submitContainer').hide();
       }
+    });
   });
-});
 
-$('#removeBtn').click(function(){
-  $('#familyForm').hide();
-  $('#addBtn').show(); 
-});
+  $('#removeBtn').click(function () {
+    $('#familyForm').hide();
+    $('#addBtn').show();
+  });
 
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+  // menu 
+  document.getElementById('openSecondOffcanvas').addEventListener('click', function () {
+    const firstCanvasEl = document.getElementById('offcanvasOne');
+    const firstCanvas = bootstrap.Offcanvas.getInstance(firstCanvasEl);
+    firstCanvas.hide();
+    firstCanvasEl.addEventListener('hidden.bs.offcanvas', function showSecond() {
+      const secondCanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasTwo'));
+      secondCanvas.show();
+      firstCanvasEl.removeEventListener('hidden.bs.offcanvas', showSecond);
+    });
+  });
+  
+  
+  document.getElementById('searchBtn').addEventListener('click', function () {
+    const firstCanvasEl = document.getElementById('offcanvasOne');
+    const firstCanvas = bootstrap.Offcanvas.getInstance(firstCanvasEl);
+    firstCanvas.hide();
+  });
+
+
+
+
+
+
+
 
 });
