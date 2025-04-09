@@ -248,33 +248,17 @@
                   </div>
                 </div>
               </nav>
-              <button
-                class="sideBar-btn"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#SideMenu"
-                aria-controls="SideMenu"
-              >
-              <i class="fa-solid fa-bars"></i>
+              <button class="sideBar-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOne">
+                <i class="fa-solid fa-bars"></i>
               </button>
-
-              <div
-                class="offcanvas offcanvas-end"
-                tabindex="-1"
-                id="SideMenu"
-                aria-labelledby="offcanvasRightLabel"
-              >
+              
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOne">
                 <div class="offcanvas-header">
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
                   <nav class="primary-side-menu">
-                    <ul style="font-weight: 500;">
+                    <ul style="font-weight: 500">
                       <li class="mb-2">
                         <a href="./About.html">About Us</a>
                       </li>
@@ -302,16 +286,73 @@
                         <a href="./contact.html">Contact</a>
                       </li>
                       <li>
-                        <a href="./cart.html" class="btn btn-primary" style="color: var(--white-color);">Go to Cart</a>
+                        <a href="./cart.html" class="btn btn-primary" style="color: var(--white-color)">Go to Cart</a>
                       </li>
                     </ul>
                   </nav>
+              
                   <div class="top-header-btn-menu d-flex gap-2">
-                    <a href="#" class="btn-secondary btn-sm"><i class="me-2 fa-solid fa-house-chimney-medical"></i>Home
-                      Service</a>
+                    <a href="#" class="btn-secondary btn-sm"><i class="me-2 fa-solid fa-house-chimney-medical"></i>Home Service</a>
                     <a href="./opd-appointment.html" class="btn-secondary btn-sm"><i
                         class="me-2 fa-solid fa-calendar-check"></i>Appointment</a>
                   </div>
+              
+                  <button type="button" class="btn btn-primary btn-circle search-btn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalSearch" id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+              
+                  <button class="cart-icon" id="openSecondOffcanvas">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTwo">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Card List</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="cart-icon cart-item">
+                    <div class="row align-item-center" style="padding-bottom: 20px">
+                      <div class="col-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="Health Package" />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="cart-item-info">
+                          <a href="./health-packageDetail.html">Standard cadiac checkup package</a>
+                          <p class="mb-0">Rs. 99</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="delete-icon">
+                          <i class="fa-solid fa-trash-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-item-center" style="padding-bottom: 20px">
+                      <div class="col-3">
+                        <img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="Health Package" />
+                      </div>
+                      <div class="col-6">
+                        <div class="cart-item-info">
+                          <a href="./health-packageDetail.html">Standard cadiac checkup package</a>
+                          <p>Rs. 99</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="delete-icon">
+                          <i class="fa-solid fa-trash-alt"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./cart.html" class="btn btn-primary">View Cart</a>
+                  <a href="./checkout.html" class="btn btn-primary">Checkout</a>
                 </div>
               </div>
             </div>
@@ -319,6 +360,21 @@
         </div>
       </div>
     </header>
+    <div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content flex-row-reverse">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="search d-flex">
+              <input type="text" placeholder="Tell me to search for you" />
+              <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- header html end -->
     <!-- start page header html -->
     <div class="appointment-form block">

@@ -2618,12 +2618,16 @@ td {
 
   .offcanvas-body .search-btn {
     display: block;
+    margin: 10px 0;
   }
 
   .offcanvas-body .cart-icon {
     display: block;
   }
 
+    .primary-side-menu ul li {
+      margin-bottom: 10px;
+    }
 
 }
 
