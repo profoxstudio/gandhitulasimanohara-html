@@ -312,10 +312,23 @@ jQuery(document).ready(function ($) {
   });
 
 
+  // popup 
+  window.onload = function () {
+    const popup = document.getElementById('popup');
+    const closeBtn = document.getElementById('popup-close');
 
+    setTimeout(function () {
+      popup.style.display = 'flex';
 
+      const autoClose = setTimeout(function () {
+        popup.style.display = 'none';
+      }, 5000);
 
-
-
+      closeBtn.onclick = function () {
+        popup.style.display = 'none';
+        clearTimeout(autoClose); 
+      };
+    }, 1000);
+  };
 
 });
