@@ -303,8 +303,8 @@ jQuery(document).ready(function ($) {
       firstCanvasEl.removeEventListener('hidden.bs.offcanvas', showSecond);
     });
   });
-  
-  
+
+
   document.getElementById('searchBtn').addEventListener('click', function () {
     const firstCanvasEl = document.getElementById('offcanvasOne');
     const firstCanvas = bootstrap.Offcanvas.getInstance(firstCanvasEl);
@@ -312,23 +312,27 @@ jQuery(document).ready(function ($) {
   });
 
 
-  // popup 
-  window.onload = function () {
-    const popup = document.getElementById('popup');
-    const closeBtn = document.getElementById('popup-close');
+// popup 
+  function initPopup() {
+    const popups = document.querySelectorAll('[data-popup]');
 
-    setTimeout(function () {
-      popup.style.display = 'flex';
+    popups.forEach(popup => {
+      const closeBtn = popup.querySelector('[data-popup-close]');
 
-      const autoClose = setTimeout(function () {
-        popup.style.display = 'none';
+      setTimeout(function () {
+        popup.classList.add('d-flex')
+      }, 1000);
+
+      setTimeout(function () {
+        popup.classList.add('d-none')
       }, 5000);
 
       closeBtn.onclick = function () {
-        popup.style.display = 'none';
-        clearTimeout(autoClose); 
+        popup.classList.add('d-none')
       };
-    }, 1000);
-  };
+    });
+  }
+
+  initPopup();
 
 });
