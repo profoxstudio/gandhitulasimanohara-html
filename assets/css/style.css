@@ -2743,12 +2743,14 @@ td {
   border-radius: 10px;
   width: 70%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
 }
 
 #popup img {
   object-fit: cover;
   height: auto;
   width: 100%;
+
 }
 
 #popup-close {
@@ -2783,6 +2785,39 @@ td {
   #popup-close {
     width: 20px;
     height: 20px;
+  }
+}
+
+
+#popup.show #popup-content {
+  animation: popupIn 0.5s ease-out forwards;
+}
+
+#popup.hide #popup-content {
+  animation: popupOut 0.4s ease-in forwards;
+}
+
+@keyframes popupIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popupOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
   }
 }
 

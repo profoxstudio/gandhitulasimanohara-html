@@ -319,20 +319,32 @@ jQuery(document).ready(function ($) {
     popups.forEach(popup => {
       const closeBtn = popup.querySelector('[data-popup-close]');
 
-      setTimeout(function () {
-        popup.classList.add('d-flex')
+      setTimeout(() => {
+        popup.classList.remove('d-none', 'hide');
+        popup.classList.add('d-flex', 'show');
       }, 1000);
 
-      setTimeout(function () {
-        popup.classList.add('d-none')
-      }, 5000);
+      setTimeout(() => {
+        closePopup(popup);
+      }, 1000000);
 
-      closeBtn.onclick = function () {
-        popup.classList.add('d-none')
+      closeBtn.onclick = () => {
+        closePopup(popup);
       };
     });
+
+    function closePopup(popup) {
+      popup.classList.remove('show');
+      popup.classList.add('hide');
+
+      setTimeout(() => {
+        popup.classList.remove('d-flex', 'hide');
+        popup.classList.add('d-none');
+      }, 400);
+    }
   }
 
   initPopup();
+
 
 });
